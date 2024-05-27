@@ -44,13 +44,13 @@ def x_completed():
                             pass
                     else:
                         xome_orderlist.append(x)  
-                        logging.info("Xome Order list  Clients Fetched from Dashboard :{}".format(xome_orderlist.append(x)))
+                        logging.info("Xome Order list  Clients Fetched from Dashboard :{}".format(x))
             if len(xome_orderlist)>0:
                 subclientName=x['subclient']
                 broker_name=x['broker_name'] 
                 print("clientname ",subclientName)
                 logging.info("length xome Order list :{}".format(len(xome_orderlist)))
-                ClientLogin(subclientName,broker_name)
+                ClientLogin(xome_orderlist[0],subclientName,broker_name)
                 
             else:
                 logging.info("Currently No orders Available")

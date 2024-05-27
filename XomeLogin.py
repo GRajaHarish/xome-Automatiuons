@@ -7,15 +7,21 @@ from utility import ExecuteQuery
 import logging
 from selenium.webdriver.support import expected_conditions as EC
 from Xome_form_identification_open import findorderTYPE
+from StatusChange import statuschange
 
-def ClientLogin(subclientName,broker_name,address):
+def ClientLogin(order_details,subclientName,broker_name):
+    statuschange(order_details['order_id'],"24","5","19")
     try:
        query = "SELECT username,password,status,ats_client_id FROM allclients WHERE form = 'xome' AND Mainclient = '"+broker_name+"' AND Subclient = '"+subclientName+"'"
        ClientDetails=ExecuteQuery(query,"Client")
     except Exception as e:
         print(f"An error occurred: {e}")   
-    if ClientDetails != "":
+    if ClientDetails:      
        logging.info("client found")
+    else:
+         print("Account Not found")   
+         logging.info("Account Not found:")
+         statuschange(order_details['order_id'],"22","3","14")
     if ClientDetails[0][2] == "Active":
        logging.info("client Active")
        username,password,clientid=ClientDetails[0][0],ClientDetails[0][1],ClientDetails[0][3]
@@ -54,6 +60,10 @@ def ClientLogin(subclientName,broker_name,address):
             print("browser_closed")
             time.sleep(9)
             driver.quit()
+    else:
+        print('Bad Password')
+        logging.info('Bad Password')
+        statuschange(order_details['order_id'],"23","3","14")
 
 
     
