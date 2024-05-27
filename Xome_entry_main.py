@@ -23,7 +23,7 @@ from datetime import datetime, timedelta
 from XomeLogin import ClientLogin
 from DataMerg import DataFilling
 from utility import ExecuteQuery
-from Xome_form_identification_open import findorderTYPE
+# from Xome_form_identification_open import findorderTYPE
 
 from stdlib.ip_checking import ip_address_checking
 import logging
