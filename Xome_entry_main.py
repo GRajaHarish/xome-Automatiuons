@@ -22,7 +22,6 @@ import queue
 from datetime import datetime, timedelta
 from XomeLogin import ClientLogin
 from DataMerg import DataFilling
-from utility import ExecuteQuery
 # from Xome_form_identification_open import findorderTYPE
 
 from stdlib.ip_checking import ip_address_checking
@@ -35,7 +34,6 @@ def x_completed():
        content_string = response.content
        data_dict = json.loads(content_string)
        dataset=json.loads(data_dict['Data']['Clientcnt'])    
- 
        if dataset:
             ip_check= ip_address_checking()   
             xome_orderlist=[]

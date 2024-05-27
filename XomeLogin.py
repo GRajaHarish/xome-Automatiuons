@@ -8,7 +8,7 @@ import logging
 from selenium.webdriver.support import expected_conditions as EC
 from Xome_form_identification_open import findorderTYPE
 
-def ClientLogin(subclientName,broker_name):
+def ClientLogin(subclientName,broker_name,address):
     try:
        query = "SELECT username,password,status,ats_client_id FROM allclients WHERE form = 'xome' AND Mainclient = '"+broker_name+"' AND Subclient = '"+subclientName+"'"
        ClientDetails=ExecuteQuery(query,"Client")
@@ -44,7 +44,7 @@ def ClientLogin(subclientName,broker_name):
             WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.ID, "inProgressOrdersTab"))
             )
-            # findorderTYPE(driver) ## here i will do my scrapimn fo the current poge after button click 
+            findorderTYPE(driver,address)
        
 
        except Exception as e:
