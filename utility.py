@@ -25,7 +25,7 @@ def create_connection(db_identifier):
         return None
 
 def get_db_config(db_identifier):
-    if db_identifier == 'db1':
+    if db_identifier == 'acceptance':
         return {
             'host': os.getenv('DB1_HOST'),
             'port': os.getenv('DB1_PORT'),
@@ -40,6 +40,22 @@ def get_db_config(db_identifier):
             'user': os.getenv('DB2_USER'),
             'password': os.getenv('DB2_PASSWORD'),
             'name': os.getenv('DB2_NAME')
+        }
+    elif db_identifier == 'otp':
+        return {
+            'host': os.getenv('DB3_HOST'),
+            'port': os.getenv('DB3_PORT'),
+            'user': os.getenv('DB3_USER'),
+            'password': os.getenv('DB3_PASSWORD'),
+            'name': os.getenv('DB3_NAME')
+        }
+    elif db_identifier == 'Client':
+        return {
+            'host': os.getenv('DB4_HOST'),
+            'port': os.getenv('DB4_PORT'),
+            'user': os.getenv('DB4_USER'),
+            'password': os.getenv('DB4_PASSWORD'),
+            'name': os.getenv('DB4_NAME')
         }
     else:
         raise ValueError("Invalid database identifier")

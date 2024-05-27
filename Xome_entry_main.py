@@ -20,8 +20,10 @@ from selenium.webdriver.support.select import Select
 import threading
 import queue
 from datetime import datetime, timedelta
-from XomeLogin import PortolLogin
-# from XomeForm import FormData
+from XomeLogin import ClientLogin
+from DataMerg import DataFilling
+from utility import ExecuteQuery
+from Xome_form_identification_open import findorderTYPE
 
 from stdlib.ip_checking import ip_address_checking
 import logging
@@ -35,8 +37,7 @@ def x_completed():
        dataset=json.loads(data_dict['Data']['Clientcnt'])    
  
        if dataset:
-            ip_check= ip_address_checking()
-            subclientName=dataset[0]['subclient']   
+            ip_check= ip_address_checking()   
             xome_orderlist=[]
             for x in dataset:  
                 ip_check=='198.98.15.235'  
@@ -45,13 +46,24 @@ def x_completed():
                             pass
                     else:
                         xome_orderlist.append(x)  
-                        logging.info("Xome Order list Bang Clients Fetched from Dashboard :{}".format(xome_orderlist.append(x)))
+                        logging.info("Xome Order list  Clients Fetched from Dashboard :{}".format(xome_orderlist.append(x)))
             if len(xome_orderlist)>0:
-                print("length ",len(xome_orderlist))
+                subclientName=x['subclient']
+                broker_name=x['broker_name'] 
+                print("clientname ",subclientName)
                 logging.info("length xome Order list :{}".format(len(xome_orderlist)))
-                print("threading starting")
-                t = threading.Thread(target=PortolLogin, args=(subclientName,))
-                t.start()
-                t.join()
+                ClientLogin(subclientName,broker_name)
                 
-x_completed()
+            else:
+                logging.info("Currently No orders Available")
+                time.sleep(30)
+            x_completed() 
+       else:
+            x_completed()
+    else:
+        x_completed()
+#-----------------------------------------------------------------------------------------------------#
+      
+if __name__ == '__main__':x_completed()
+           
+
