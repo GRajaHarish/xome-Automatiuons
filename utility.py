@@ -32,7 +32,7 @@ def get_db_config(db_identifier):
             'password': os.getenv('DB1_PASSWORD'),
             'name': os.getenv('DB1_NAME')
         }
-    elif db_identifier == 'db2':
+    elif db_identifier == 'Rpad':
         return {
             'host': os.getenv('DB2_HOST'),
             'port': os.getenv('DB2_PORT'),
