@@ -5,10 +5,12 @@ import time
 from selenium.webdriver.support.ui import WebDriverWait
 from utility import ExecuteQuery
 import logging
+import threading
+import queue
 from selenium.webdriver.support import expected_conditions as EC
 from Xome_form_identification_open import findorderTYPE
 from StatusChange import statuschange
-
+from Xome_JSON_data_fetching_db import formdata_fetching_db
 def ClientLogin(order_details):
    #  #statuschange(order_details['order_id'],"24","5","19")
     subclientName=order_details['subclient']
@@ -21,6 +23,9 @@ def ClientLogin(order_details):
      broker_name=broker_name  
     print("mainclient" ,broker_name ,"subclient",subclientName)
     try:
+       result_queue = queue.Queue()
+       t1 = threading.Thread(target= formdata_fetching_db, args=(result_queue,order_details))
+       t1.start()
        query = "SELECT username,password,status,ats_client_id FROM allclients WHERE form = 'xome' AND Mainclient = '"+broker_name+"' AND Subclient = '"+subclientName+"'"
        ClientDetails=ExecuteQuery(query,"Client")
     except Exception as e:
@@ -58,6 +63,7 @@ def ClientLogin(order_details):
             OTP_field.send_keys(otpvalue)
             OTP_button = driver.find_element(By.ID, "BtnLogin")
             OTP_button.click()  
+            t1.join()
             WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.ID, "inProgressOrdersTab"))
             )
