@@ -66,7 +66,7 @@ def ExecuteQuery(query,DB):
         if connection:
             cursor = connection.cursor()
             cursor.execute(query)
-            results = cursor.fetchall()
+            results = cursor.fetchone()
             return results
     except Error as e:
         print(f"Error executing query: {e}")
