@@ -3,15 +3,12 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 import time
+import logging
 
-def findorderTYPE():
-    global driver
-    chrome_options = Options()
-    chrome_options.add_argument("--start-fullscreen")
-    driver = webdriver.Chrome(options=chrome_options)
-    driver.get('file:///G:/Orders.html')
-    address_to_search = "10914 W COTTONWOOD LN\nAVONDALE, AZ 85392"
-    table = driver.find_element(By.ID, "OrdersInProgressGrid")
+def findorderTYPE(driver,address):
+    global chromedriver
+    chromedriver=driver
+    table = chromedriver.find_element(By.ID, "OrdersInProgressGrid")
     rows = table.find_elements(By.XPATH, ".//tbody/tr")
     merge_text_path = []
     subject_property_texts = []
@@ -28,33 +25,33 @@ def findorderTYPE():
           subject_property_text = "N/A"
         subject_property_texts.append(subject_property_text)
         data[subject_property_text] = (ordertypeLink, orderlinkXpath,form_type)
-    print(json.dumps(data,indent=4))
-    openOrderType(data,rows)
+    logging.info(json.dumps(data,indent=4))
+    openOrderType(data,address)
 
-def openOrderType(data,rows):
-    address="1241 N 48TH ST Unit #111\nPHOENIX, AZ 85008"
-    orderlist=["cBPO","cBPO Ext (x)","cBPO Ext (x) 24hr"]
-    
+def openOrderType(data,address):
+    orderlist=["cBPO Ext (u)", "cBPO Ext (n)", "cBPO Ext (a)", "cEval Ext (b)", "cBPO Ext (x) AVR"]
     if address in data:
         info = data[address]
-        for order_type in orderlist:
-            if order_type in info[2]:
-                print(f"Order type '{order_type}' found in info[2]")
-                order = driver.find_elements(By.XPATH,info[1] )
-                if order:
-                   openIdentifiedForm(order[0])
+        if info:
+            for order_type in orderlist:
+                if order_type in info[2]:
+                    print(f"Order type '{order_type}' found")
+                    order = chromedriver.find_elements(By.XPATH,info[1] )
+                    if order:
+                        openIdentifiedForm(order[0])
+                    else:
+                        print(info[1])
+                        print("Order type not found unable to do this order ")
+                    break
                 else:
-                    print(info[1])
-                    print("Order type not found")
-                break
-            else:
-                print("None of the order types found in info[2]")
-               
-  
+                    print(f"order type can't done {order_type}")
+        else:
+            print("address not fount in portal")
+    else:
+            print("address not fount in portal")
+   
+
 def openIdentifiedForm(xpath):
      print("Order type found")
      xpath.click()
-     time.sleep(8)
-     driver.quit()
-   
-findorderTYPE()
+     

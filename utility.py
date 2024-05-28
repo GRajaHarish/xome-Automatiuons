@@ -18,7 +18,6 @@ def create_connection(db_identifier):
             database=db_config['name']
         )
         if connection:
-            print(f"Connected to the database {db_config['name']}")
             return connection
     except Error as e:
         print(f"Error: {e}")

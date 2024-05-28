@@ -9,8 +9,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from Xome_form_identification_open import findorderTYPE
 from StatusChange import statuschange
 
-def ClientLogin(order_details,subclientName,broker_name):
-    statuschange(order_details['order_id'],"24","5","19")
+def ClientLogin(order_details,subclientName,broker_name,address):
+   #  #statuschange(order_details['order_id'],"24","5","19")
+    print("mainclient" ,broker_name ,"subclient",subclientName)
     try:
        query = "SELECT username,password,status,ats_client_id FROM allclients WHERE form = 'xome' AND Mainclient = '"+broker_name+"' AND Subclient = '"+subclientName+"'"
        ClientDetails=ExecuteQuery(query,"Client")
@@ -18,11 +19,13 @@ def ClientLogin(order_details,subclientName,broker_name):
         print(f"An error occurred: {e}")   
     if ClientDetails:      
        logging.info("client found")
+       flag=1
     else:
          print("Account Not found")   
          logging.info("Account Not found:")
-         statuschange(order_details['order_id'],"22","3","14")
-    if ClientDetails[0][2] == "Active":
+         #statuschange(order_details['order_id'],"22","3","14")
+         flag=0
+    if ClientDetails[0][2] == "Active" and flag == 1:
        logging.info("client Active")
        username,password,clientid=ClientDetails[0][0],ClientDetails[0][1],ClientDetails[0][3]
        chrome_options = Options()
@@ -39,7 +42,7 @@ def ClientLogin(order_details,subclientName,broker_name):
             WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.ID, "Login_SecurityCode"))
             )
-            time.sleep(90)
+            time.sleep(50)
             OtpQuery ="SELECT Code FROM xomeverificationcode where clientid ='"+clientid+"' ORDER BY timestamp DESC LIMIT 1"
             otp=ExecuteQuery(OtpQuery,"otp")
             otpvalue=otp[0][0]
@@ -50,20 +53,16 @@ def ClientLogin(order_details,subclientName,broker_name):
             WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.ID, "inProgressOrdersTab"))
             )
-            # findorderTYPE(driver) ## here i will do my scrapimn fo the current poge after button click 
-       
-
+            findorderTYPE(driver,address)
        except Exception as e:
             print(f"An error occurred: {e}")
        finally:
-            # Close the browser
             print("browser_closed")
-            time.sleep(9)
             driver.quit()
     else:
         print('Bad Password')
         logging.info('Bad Password')
-        statuschange(order_details['order_id'],"23","3","14")
+        #statuschange(order_details['order_id'],"23","3","14")
 
 
     
