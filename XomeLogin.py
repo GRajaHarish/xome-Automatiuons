@@ -9,8 +9,16 @@ from selenium.webdriver.support import expected_conditions as EC
 from Xome_form_identification_open import findorderTYPE
 from StatusChange import statuschange
 
-def ClientLogin(order_details,subclientName,broker_name,address):
+def ClientLogin(order_details):
    #  #statuschange(order_details['order_id'],"24","5","19")
+    subclientName=order_details['subclient']
+    broker_name=order_details['broker_name'] 
+    address=order_details['subject_address']
+    print("clientname ",subclientName)
+    if broker_name == "ECESIS":
+     broker_name=subclientName
+    else:
+     broker_name=broker_name  
     print("mainclient" ,broker_name ,"subclient",subclientName)
     try:
        query = "SELECT username,password,status,ats_client_id FROM allclients WHERE form = 'xome' AND Mainclient = '"+broker_name+"' AND Subclient = '"+subclientName+"'"

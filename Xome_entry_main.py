@@ -42,21 +42,31 @@ def x_completed():
                     else:
                         xome_orderlist.append(x)  
                         logging.info("Xome Order list  Clients Fetched from Dashboard :{}".format(x))
+            print("Total Number of xome orders =",len(xome_orderlist))
+            threads=[]
             if len(xome_orderlist)>0:
-                subclientName=x['subclient']
-                broker_name=x['broker_name'] 
-                address=x['subject_address']
-                print("clientname ",subclientName)
+                print("length ",len(xome_orderlist))
                 logging.info("length xome Order list :{}".format(len(xome_orderlist)))
-                if broker_name == "ECESIS":
-                   MainClient=subclientName
+                print("threading starting")
+                if len(xome_orderlist)>=15:
+                    for x in range(15):   
+                        t = threading.Thread(target=ClientLogin, args=(xome_orderlist[x],))
+                        threads.append(t)
+                elif len(xome_orderlist)==1:
+                        t = threading.Thread(target=ClientLogin, args=(xome_orderlist[0],))
+                        threads.append(t)
                 else:
-                   MainClient=broker_name     
-                ClientLogin(xome_orderlist[0],subclientName,MainClient,address)
+                    for x in range(len(xome_orderlist)):   
+                        t = threading.Thread(target=ClientLogin, args=(xome_orderlist[x],))
+                        threads.append(t)
+                    # Wait for all threads to complete
+                for t in threads:
+                    t.start()
+                for t in threads:
+                    t.join()
+                x_completed() 
             else:
-                logging.info("Currently No orders Available")
-                time.sleep(30)
-            x_completed() 
+                x_completed()  
        else:
             x_completed()
     else:
