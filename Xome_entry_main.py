@@ -12,7 +12,6 @@ import requests
 import re
 import sys
 from datetime import datetime as DT
-#from webdriver_manager.chrome import ChromeDriverManager
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
@@ -22,8 +21,6 @@ import queue
 from datetime import datetime, timedelta
 from XomeLogin import ClientLogin
 from DataMerg import DataFilling
-# from Xome_form_identification_open import findorderTYPE
-
 from stdlib.ip_checking import ip_address_checking
 import logging
 
@@ -48,10 +45,14 @@ def x_completed():
             if len(xome_orderlist)>0:
                 subclientName=x['subclient']
                 broker_name=x['broker_name'] 
+                address=x['subject_address']
                 print("clientname ",subclientName)
                 logging.info("length xome Order list :{}".format(len(xome_orderlist)))
-                ClientLogin(xome_orderlist[0],subclientName,broker_name)
-                
+                if broker_name == "ECESIS":
+                   MainClient=subclientName
+                else:
+                   MainClient=broker_name     
+                ClientLogin(xome_orderlist[0],subclientName,MainClient,address)
             else:
                 logging.info("Currently No orders Available")
                 time.sleep(30)
