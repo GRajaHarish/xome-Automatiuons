@@ -144,4 +144,3 @@ def formdata_fetching_db(result_queue,order_details):
             result_queue.put(merged_json)
             return
     
-formdata_fetching_db()
