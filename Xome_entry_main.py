@@ -25,6 +25,7 @@ from stdlib.ip_checking import ip_address_checking
 import logging
 
 def x_completed():
+    print("\nSmart Entry Xome started.................................................")
     url = 'http://13.200.17.36/autobpo_test/Home/GetBPO_Completed?stateId=0'
     response = requests.get(url)
     if response.status_code == 200:

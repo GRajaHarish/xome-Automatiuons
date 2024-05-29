@@ -38,37 +38,40 @@ def ClientLogin(order_details):
          logging.info("Account Not found:")
          #statuschange(order_details['order_id'],"22","3","14")
          flag=0
-    if ClientDetails[0][2] == "Active" and flag == 1:
-         loginginto_Portal(ClientDetails)
-         t1.join()
-         results = []
-         while not result_queue.empty():
-               results.append(result_queue.get())
-               # print(results)
-               logging.info("Results:{}".format(results))
-         merged_json=results[0]
-          #print(merged_json)
-         logging.info("merged_json in ss_form_processing:{}".format(merged_json))
-          
-         try:
-               #print("merged_json['QC']   ",merged_json['QC'])
-               QC=merged_json['QC']
-               logging.info("QC Count:{}".format(QC))
-         except Exception as ex:
-               QC="0"
-               print('Exception rised ..', ex)
-               logging.info("Exception rised in QC..:{}".format(ex))
-          #print("QC ",QC)
-         if QC=="0" or QC=="null" or QC=="" or QC is None:
-               findorderTYPE(orders,session,merged_json,order_details)
-    else:
-        print('Bad Password')
-        logging.info('Bad Password')
-        #statuschange(order_details['order_id'],"23","3","14")     
+    if flag == 1:     
+          if ClientDetails[2] == "Active" and flag == 1:
+               cookies,driver=loginginto_Portal(ClientDetails)
+               t1.join()
+               findorderTYPE(driver,address,cookies)
+               results = []
+               while not result_queue.empty():
+                         results.append(result_queue.get())
+                         # print(results)
+                         logging.info("Results:{}".format(results))
+               merged_json=results[0]
+                    #print(merged_json)
+               logging.info("merged_json in ss_form_processing:{}".format(merged_json))
+                    
+               try:
+                         #print("merged_json['QC']   ",merged_json['QC'])
+                         QC=merged_json['QC']
+                         logging.info("QC Count:{}".format(QC))
+               except Exception as ex:
+                         QC="0"
+                         print('Exception rised ..', ex)
+                         logging.info("Exception rised in QC..:{}".format(ex))
+                    #print("QC ",QC)
+               if QC=="0" or QC=="null" or QC=="" or QC is None:
+                         # findorderTYPE(driver,address,merged_json,order_details)\
+                         findorderTYPE(driver,address,cookies)
+          else:
+               print('Bad Password')
+               logging.info('Bad Password')
+               #statuschange(order_details['order_id'],"23","3","14")     
 
 def loginginto_Portal(ClientDetails):
        logging.info("client Active")
-       username,password,clientid=ClientDetails[0][0],ClientDetails[0][1],ClientDetails[0][3]
+       username,password,clientid=ClientDetails[0],ClientDetails[1],ClientDetails[3]
        chrome_options = Options()
        chrome_options.add_argument("--start-fullscreen") 
        driver = webdriver.Chrome(options=chrome_options)
@@ -83,10 +86,12 @@ def loginginto_Portal(ClientDetails):
             WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.ID, "Login_SecurityCode"))
             )
-            time.sleep(50)
+            print("Login SuccessFull ....................................................................................")
+            print("waiting For OTP /////////////////////////////////////////////////////////////////////////////////////")
+            time.sleep(90)
             OtpQuery ="SELECT Code FROM xomeverificationcode where clientid ='"+clientid+"' ORDER BY timestamp DESC LIMIT 1"
             otp=ExecuteQuery(OtpQuery,"otp")
-            otpvalue=otp[0][0]
+            otpvalue=otp[0]
             OTP_field = driver.find_element(By.ID, "Login_SecurityCode")
             OTP_field.send_keys(otpvalue)
             OTP_button = driver.find_element(By.ID, "BtnLogin")
@@ -95,12 +100,13 @@ def loginginto_Portal(ClientDetails):
             WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.ID, "inProgressOrdersTab"))
             )
-            findorderTYPE(driver,address)
+            cookies = driver.get_cookies()
+            return cookies,driver
        except Exception as e:
             print(f"An error occurred: {e}")
        finally:
-            print("browser_closed")
-            driver.quit()   
+            print("")
+             
 
 
     
