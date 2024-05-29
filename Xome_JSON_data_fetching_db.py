@@ -10,7 +10,7 @@ from FormProcessing.Xome_form_processing import FormFilling
 #from webdriver_anager.chrome import ChromeDriverManager
 def formdata_fetching_db(result_queue,order_details):
     tfsorder_id=order_details['order_id']
-    tfs_orderid_rpad="SELECT * FROM subject where TFSOrderID like '"+tfsorder_id+"%'"    
+    tfs_orderid_rpad="SELECT * FROM subject where TFSOrderID like '+tfsorder_id+%'"    
     tfs_order_id_rpad = ExecuteQuery(tfs_orderid_rpad,"Rpad") 
     print("tfs_order_id_rpad----",tfs_order_id_rpad) 
     if tfs_order_id_rpad:
