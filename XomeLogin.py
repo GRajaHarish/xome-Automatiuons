@@ -39,6 +39,34 @@ def ClientLogin(order_details):
          #statuschange(order_details['order_id'],"22","3","14")
          flag=0
     if ClientDetails[0][2] == "Active" and flag == 1:
+         loginginto_Portal(ClientDetails)
+         t1.join()
+         results = []
+         while not result_queue.empty():
+               results.append(result_queue.get())
+               # print(results)
+               logging.info("Results:{}".format(results))
+         merged_json=results[0]
+          #print(merged_json)
+         logging.info("merged_json in ss_form_processing:{}".format(merged_json))
+          
+         try:
+               #print("merged_json['QC']   ",merged_json['QC'])
+               QC=merged_json['QC']
+               logging.info("QC Count:{}".format(QC))
+         except Exception as ex:
+               QC="0"
+               print('Exception rised ..', ex)
+               logging.info("Exception rised in QC..:{}".format(ex))
+          #print("QC ",QC)
+         if QC=="0" or QC=="null" or QC=="" or QC is None:
+               findorderTYPE(orders,session,merged_json,order_details)
+    else:
+        print('Bad Password')
+        logging.info('Bad Password')
+        #statuschange(order_details['order_id'],"23","3","14")     
+
+def loginginto_Portal(ClientDetails):
        logging.info("client Active")
        username,password,clientid=ClientDetails[0][0],ClientDetails[0][1],ClientDetails[0][3]
        chrome_options = Options()
@@ -63,7 +91,7 @@ def ClientLogin(order_details):
             OTP_field.send_keys(otpvalue)
             OTP_button = driver.find_element(By.ID, "BtnLogin")
             OTP_button.click()  
-            t1.join()
+           
             WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.ID, "inProgressOrdersTab"))
             )
@@ -72,11 +100,7 @@ def ClientLogin(order_details):
             print(f"An error occurred: {e}")
        finally:
             print("browser_closed")
-            driver.quit()
-    else:
-        print('Bad Password')
-        logging.info('Bad Password')
-        #statuschange(order_details['order_id'],"23","3","14")
+            driver.quit()   
 
 
     
