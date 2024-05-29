@@ -107,7 +107,13 @@ def formdata_fetching_db(result_queue,order_details):
                             #print("Merged JSON:", merged_json)
                             #logging.info("Merged JSON:: {}".format(merged_json))
                             result_queue.put(merged_json)
-            
+                            print("Data is empty.")
+                            with open('xome.json') as f:
+                                data = json.load(f)
+                            from Xome_EXT_form_filling import Formnewbpoext
+                            init = Formnewbpoext()
+                                # if session then send session
+                            init.form(merged_json,'1231313', data)
 
                 else:
                     print("The subject is in Not Completed status", sub_status)
@@ -135,4 +141,4 @@ def formdata_fetching_db(result_queue,order_details):
             merged_json=[]
             result_queue.put(merged_json)
             return
-    
+formdata_fetching_db()

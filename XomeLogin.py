@@ -39,7 +39,7 @@ def ClientLogin(order_details):
          #statuschange(order_details['order_id'],"22","3","14")
          flag=0
     if ClientDetails[0][2] == "Active" and flag == 1:
-         loginginto_Portal(ClientDetails)
+         driver = loginginto_Portal(ClientDetails)
          t1.join()
          results = []
          while not result_queue.empty():
@@ -60,7 +60,7 @@ def ClientLogin(order_details):
                logging.info("Exception rised in QC..:{}".format(ex))
           #print("QC ",QC)
          if QC=="0" or QC=="null" or QC=="" or QC is None:
-               findorderTYPE(orders,session,merged_json,order_details)
+               findorderTYPE(driver,address,merged_json,order_details)
     else:
         print('Bad Password')
         logging.info('Bad Password')
@@ -95,7 +95,7 @@ def loginginto_Portal(ClientDetails):
             WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.ID, "inProgressOrdersTab"))
             )
-            findorderTYPE(driver,address)
+            return driver   
        except Exception as e:
             print(f"An error occurred: {e}")
        finally:
