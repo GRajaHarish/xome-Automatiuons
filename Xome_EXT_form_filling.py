@@ -30,7 +30,14 @@ class Formnewbpoext:
         
         # Open the HTML file in Chrome
         driver.get(file_url)
-        
+        # div = driver.find_element(By.ID, "subjectinformation-uniform-1074-body")
+
+        # # Now you can find input elements within 'div'
+        # input_fields = div.find_elements(By.TAG_NAME, "input")
+
+        # # Loop through input_fields if you need to work with each input element individually
+        # for input_field in input_fields:
+        #     input_field.clear()
         # Wait for the page to load
         time.sleep(2)
         try:
