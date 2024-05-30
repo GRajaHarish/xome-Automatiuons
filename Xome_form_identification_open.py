@@ -2,10 +2,13 @@ import json
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
+from conditions import condition_data
 import time
 import logging
 
-def findorderTYPE(driver,address,cookies):
+def findorderTYPE(driver,address,order_details):
+    subclient = order_details['subclient']
+    merged_json=condition_data(merged_json,subclient)
     global chromedriver
     chromedriver=driver
     OrderProgressTab=chromedriver.find_element(By.ID,"inProgressOrdersTab")
@@ -29,7 +32,7 @@ def findorderTYPE(driver,address,cookies):
         subject_property_texts.append(subject_property_text)
         data[subject_property_text] = (ordertypeLink, orderlinkXpath,form_type)
     logging.info(json.dumps(data,indent=4))
-    openOrderType(data,address)
+    openOrderType(data,address,driver,merged_json,order_details)
 
 def openOrderType(data,address):
     print(data,address)
@@ -42,7 +45,19 @@ def openOrderType(data,address):
                 if order_type in info[2]:
                     order = chromedriver.find_elements(By.XPATH,info[1] )
                     if order:
-                        openIdentifiedForm(order[0])
+                        listing_address=openIdentifiedForm(order[0])
+                        if listing_address:
+                            print("Data has a value:", listing_address)
+                            logging.info("Entry already filled")
+                            # statuschange(order_details['order_id'], "25", "3", "14")
+                        else:
+                            print("Data is empty.")
+                            with open('xome.json') as f:
+                                data = json.load(f)
+                            from Xome_EXT_form_filling import Formnewbpoext
+                            init = Formnewbpoext()
+                            # if session then send session
+                            init.form(merged_json, driver, order_details['order_id'], data, order['ItemId'], order['OrderId'])
                     else:
                         print(info[1])
                         print("Order type not found unable to do this order ")

@@ -3,16 +3,6 @@
        {
           "Subject_info":[
              {
-                "filedtype":"date_fill_javascript",
-                "values":[
-                   [
-                      "Inspection_Date",
-                      "//*[@id='datefield-1077-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
                 "filedtype":"Textbox",
                 "values":[
                    [
@@ -36,8 +26,8 @@
                 "filedtype":"select_data",
                 "values":[
                    [
-                      "Subtype:",
-                      "//*[@id='textfield-1081-inputEl']",
+                      "Subtype",
+                      "//*[@id='combobox-1081-inputEl']",
                       "xpath"
                    ]
                 ]
@@ -103,7 +93,7 @@
                 "filedtype":"text",
                 "values":[
                    [
-                      "Current List Price:",
+                      "Current List Price",
                       "//*[@id='mbxautocurrencyfield-1099-inputEl']",
                       "xpath"
                    ]
@@ -113,7 +103,7 @@
                 "filedtype":"text",
                 "values":[
                    [
-                      "Current Listing Type:",
+                      "Current Listing Type",
                       "//*[@id='combobox-1100-inputEl']",
                       "xpath"
                    ]
@@ -123,7 +113,7 @@
                 "filedtype":"text",
                 "values":[
                    [
-                      "CDOM:",
+                      "CDOM",
                       "//*[@id='numberfield-1101-inputEl']",
                       "xpath"
                    ]
@@ -150,7 +140,7 @@
                 "filedtype":"text",
                 "values":[
                    [
-                      "Original List Date:",
+                      "Original List Date",
                       "//*[@id='datefield-1107-inputEl']",
                       "xpath"
                    ]
@@ -180,7 +170,7 @@
                 "filedtype":"text",
                 "values":[
                    [
-                      "Original List Days on Market:",
+                      "Original List Days on Market",
                       "//*[@id='numberfield-1110-inputEl']",
                       "xpath"
                    ]
@@ -234,7 +224,7 @@
                 "filedtype":"Textbox_default",
                 "values":[
                    [
-                      "How did you determine the occupancy?:",
+                      "How did you determine the occupancy",
                       "//*[@id='mbxlimitedtextarea-2024-inputEl']",
                       "xpath"
                    ]
@@ -254,7 +244,7 @@
                 "filedtype":"Textbox",
                 "values":[
                    [
-                      "Percentage_of_Tenants:",
+                      "Percentage_of_Tenants",
                       "//*[@id='numberfield-2027-inputEl']",
                       "xpath"
                    ]
@@ -314,7 +304,7 @@
                 "filedtype":"Textbox",
                 "values":[
                    [
-                      "Typical_Marketing_Time:",
+                      "Typical_Marketing_Time",
                       "//*[@id='combobox-2040-inputEl']",
                       "xpath"
                    ]
@@ -324,7 +314,7 @@
                 "filedtype":"text",
                 "values":[
                    [
-                      "# Comps Currently Listed:",
+                      "Comps Currently Listed",
                       "//*[@id='numberfield-2045-inputEl']",
                       "xpath"
                    ]
@@ -438,7 +428,7 @@
                 "filedtype":"Textbox",
                 "values":[
                    [
-                      "Date_of_Inspection:",
+                      "Date_of_Inspection",
                       "//*[@id='datefield-2068-inputEl']",
                       "xpath"
                    ]
@@ -448,7 +438,7 @@
                 "filedtype":"Textbox",
                 "values":[
                    [
-                      "Estimated_Marketing_Time:",
+                      "Estimated_Marketing_Time",
                       "//*[@id='combobox-2069-inputEl']",
                       "xpath"
                    ]

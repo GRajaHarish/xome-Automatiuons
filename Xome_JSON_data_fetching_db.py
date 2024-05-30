@@ -8,11 +8,13 @@ import json
 import logging
 from FormProcessing.Xome_form_processing import FormFilling
 #from webdriver_anager.chrome import ChromeDriverManager
-def formdata_fetching_db(result_queue,order_details):
-    tfsorder_id=order_details['order_id']
-    tfs_orderid_rpad="SELECT * FROM subject where TFSOrderID like '+tfsorder_id+%'"    
+from queue import Queue
+result_queue = Queue()
+def formdata_fetching_db(result_queue):
+    tfsorder_id='1231287'
+    tfs_orderid_rpad="SELECT * FROM subject where TFSOrderID like '"+tfsorder_id+"%'"    
     tfs_order_id_rpad = ExecuteQuery(tfs_orderid_rpad,"Rpad") 
-    print("tfs_order_id_rpad----",tfs_order_id_rpad) 
+    # print("tfs_order_id_rpad----",tfs_order_id_rpad) 
     if tfs_order_id_rpad:
         sub_query="SELECT Status FROM subject WHERE TFSOrderID like '"+tfsorder_id+"%'"    
         sub_status = ExecuteQuery(sub_query,"Rpad")
@@ -107,7 +109,13 @@ def formdata_fetching_db(result_queue,order_details):
                             #print("Merged JSON:", merged_json)
                             #logging.info("Merged JSON:: {}".format(merged_json))
                             result_queue.put(merged_json)
-            
+                            print("Data is empty.")
+                            with open('xome.json') as f:
+                                data = json.load(f)
+                            from Xome_EXT_form_filling import Formnewbpoext
+                            init = Formnewbpoext()
+                                # if session then send session
+                            init.form(merged_json,'1231313', data)
 
                 else:
                     print("The subject is in Not Completed status", sub_status)
@@ -135,4 +143,4 @@ def formdata_fetching_db(result_queue,order_details):
             merged_json=[]
             result_queue.put(merged_json)
             return
-    
+formdata_fetching_db(result_queue)
