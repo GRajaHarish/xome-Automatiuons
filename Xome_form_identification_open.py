@@ -51,7 +51,7 @@ def openOrderType(data,address):
                             logging.info("Entry already filled")
                             # statuschange(order_details['order_id'], "25", "3", "14")
                         else:
-                            print("Data is empty.")
+                            print("Fresh Form Identified ................................................................................")
                             with open('xome.json') as f:
                                 data = json.load(f)
                             from Xome_EXT_form_filling import Formnewbpoext

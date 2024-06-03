@@ -12,33 +12,21 @@ from conditions import condition_data
 import time
 import logging
 import traceback
-
-
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+from bs4 import BeautifulSoup
 
 class Formnewbpoext:
-
-    def form(self,merged_json,order_id,data):
-        # from StatusChange import statuschange
+            #  merged json = conditions completed data
+    def form(self,merged_json,order_id,data):   
+        # from#statuschange import#statuschange
         #merged_json=condition_data(merged_json)
-        file_path = r'C:\Users\mdm460\Downloads\Subject.html'
+        file_path = r'E:/PROJRCT XOME/Cbpo Ext(u)_1/Subject.html'
         chrome_options = Options()
         chrome_options.add_argument("--start-fullscreen") 
         driver = webdriver.Chrome(options=chrome_options)
-        
-        # Convert the file path to a URL format
         file_url = 'file:///' + file_path.replace('\\', '/')
-        
-        # Open the HTML file in Chrome
         driver.get(file_url)
-        # div = driver.find_element(By.ID, "subjectinformation-uniform-1074-body")
-
-        # # Now you can find input elements within 'div'
-        # input_fields = div.find_elements(By.TAG_NAME, "input")
-
-        # # Loop through input_fields if you need to work with each input element individually
-        # for input_field in input_fields:
-        #     input_field.clear()
-        # Wait for the page to load
         time.sleep(2)
         try:
             for page_data in data["page"]:
@@ -54,7 +42,7 @@ class Formnewbpoext:
                                 data_filling_text(driver,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: data_filling_text( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
-                            elif filedtype == "select_data":
+                            elif filedtype == "select_data1":
                                 select_field( driver,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: select_field( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
@@ -67,7 +55,7 @@ class Formnewbpoext:
                                 data_filling_text( field[0], field[1], field[2])
                                 logging.info(f"Logged: data_filling_text( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
-                            elif filedtype == "select_default":
+                            elif filedtype == "select_default1":
                                 select_field( field[0], field[1], field[2])
                                 logging.info(f"Logged: select_field( {field[0]}, {field[1]}, {field[2]})")
                             
@@ -79,33 +67,19 @@ class Formnewbpoext:
                                 javascript_excecuter_datefilling( driver,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: javascript_excecuter_datefilling( driver,merged_json[{field[0]}], {field[1]}, {field[2]}")
                             elif filedtype =="save_data":
-                                for cookie in driver.get_cookies():
-                                    c = {cookie['name']: cookie['value']}
-                                    session.cookies.update(c)  
-                                save_form(order_id)
-                                Neighborhood = json.dumps(Neighborhood_url)
-                                Neighborhood_Information=json.loads(Neighborhood)
-                                driver.get(Neighborhood_Information['Neighborhood']) 
+                                pass
                                              
-                #     #for control in
-                #     save_form(order_id)   
-                # if "save_data" in page_data:
-                #     #for control in
-                #     save_form(order_id)
-                #     #data=page_data['save_data']['nextpage']
-                #     #link=type.get(data)
-                #     driver.get(type)
-                #     #driver.get(f"{type}")
-
-                elif "Neighborhood Information" in page_data:
-                    for control in page_data["Neighborhood Information"]:
+   
+                elif "Neighborhood" in page_data:
+                    chrome= openchrome2()
+                    for control in page_data["Neighborhood"]:
                         print(control["filedtype"])
                         for field in control["values"]:
                             filedtype = control["filedtype"]
                             
                             if filedtype == "Textbox":
                                 print(field)
-                                data_filling_text( driver,merged_json[field[0]], field[1], field[2])
+                                data_filling_text( chrome,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: data_filling_text( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
                             elif filedtype == "select_data":
@@ -118,7 +92,7 @@ class Formnewbpoext:
                             
                             elif filedtype == "Textbox_default":
                                 print(field)
-                                data_filling_text( field[0], field[1], field[2])
+                                data_filling_text(chrome, field[0], field[1], field[2])
                                 logging.info(f"Logged: data_filling_text( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
                             elif filedtype == "select_default":
@@ -133,16 +107,12 @@ class Formnewbpoext:
                                 javascript_excecuter_datefilling( driver,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: javascript_excecuter_datefilling( driver,merged_json[{field[0]}], {field[1]}, {field[2]}")
                             elif filedtype =="save_data":
-                                save_form(order_id)
-                                for cookie in driver.get_cookies():
-                                    c = {cookie['name']: cookie['value']}
-                                    session.cookies.update(c)  
-                                Comparable = json.dumps(Comparable_url)
-                                Comparable_data=json.loads(Comparable)
-                                driver.get(Comparable_data['Comparable'])
+                                pass
+                             
                                 
 
                 elif "Comparable" in page_data:
+                    cdriver=openchrome()
                     for control in page_data["Comparable"]:
                         print(control["filedtype"])
                         for field in control["values"]:
@@ -150,7 +120,7 @@ class Formnewbpoext:
                             
                             if filedtype == "Textbox":
                                 print(field)
-                                data_filling_text( driver,merged_json[field[0]], field[1], field[2])
+                                data_filling_text( cdriver,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: data_filling_text( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
                             elif filedtype == "select_data":
@@ -178,13 +148,7 @@ class Formnewbpoext:
                                 javascript_excecuter_datefilling( driver,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: javascript_excecuter_datefilling( driver,merged_json[{field[0]}], {field[1]}, {field[2]}")
                             elif filedtype =="save_data":
-                                for cookie in driver.get_cookies():
-                                    c = {cookie['name']: cookie['value']}
-                                    session.cookies.update(c)
-                                save_form(order_id)
-                                Repairs = json.dumps(Repairs_url)
-                                Repairs_data=json.loads(Repairs)
-                                driver.get(Repairs_data['Repairs'])
+                                pass
                                 
 
                 elif "Repairs" in page_data:
@@ -223,13 +187,7 @@ class Formnewbpoext:
                                 javascript_excecuter_datefilling( driver,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: javascript_excecuter_datefilling( driver,merged_json[{field[0]}], {field[1]}, {field[2]}")
                             elif filedtype =="save_data":
-                                for cookie in driver.get_cookies():
-                                    c = {cookie['name']: cookie['value']}
-                                    session.cookies.update(c)
-                                save_form(order_id)
-                                Comments = json.dumps(Comments_url)
-                                Comments_data=json.loads(Comments)
-                                driver.get(Comments_data['Comments'])
+                                pass
                                 
 
 
@@ -269,16 +227,11 @@ class Formnewbpoext:
                                 javascript_excecuter_datefilling( driver,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: javascript_excecuter_datefilling( driver,merged_json[{field[0]}], {field[1]}, {field[2]}")
                             elif filedtype =="save_data":
-                                for cookie in driver.get_cookies():
-                                    c = {cookie['name']: cookie['value']}
-                                    session.cookies.update(c)
-                                save_form(order_id)  
-                                Price = json.dumps(Price_url)
-                                Price_data=json.loads(Price)
-                                driver.get(Price_data['Price'])      
+                               pass    
                                
 
                 elif "Price" in page_data:
+                    driver=openchrome3()
                     for control in page_data["Price"]:
                         print(control["filedtype"])
                         for field in control["values"]:
@@ -314,30 +267,40 @@ class Formnewbpoext:
                                 javascript_excecuter_datefilling( driver,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: javascript_excecuter_datefilling( driver,merged_json[{field[0]}], {field[1]}, {field[2]}")
                             elif filedtype =="save_data":
-                                for cookie in driver.get_cookies():
-                                    c = {cookie['name']: cookie['value']}
-                                    session.cookies.update(c)
-
-                                save_form(order_id)         
-                                
-                # Comparable = json.dumps(Comparable_url)
-                # Comparable_data=json.loads(Comparable)
-                # driver.get(Comparable_data['Comparable'])   
-            print("Complete")  
-            time.sleep(10)          
-            save_form(order_id)
-            
-            ###************************************************ 
-            
-                                
-            time.sleep(2)
-            
-            statuschange(order_id,"26","3","14")
+                                pass  
+           #statuschange(order_id,"26","3","14")
             print("pls wait")
         except Exception as e:
             traceback.print_exc()
              # Optionally, you can also log the exception
             print("An exception occurred:", str(e))
-            statuschange(order_id,"27","3","14")
+            #statuschange(order_id,"27","3","14")
             print("Not Completed")
+
+def openchrome():
+    file_path = r'E:/PROJRCT%20XOME/Cbpo%20Ext(u)_1/Comparables.html'
+    chrome_options = Options()
+    chrome_options.add_argument("--start-fullscreen") 
+    driver = webdriver.Chrome(options=chrome_options)
+    file_url = 'file:///' + file_path.replace('\\', '/')
+    driver.get(file_url)
+    return driver
+def openchrome2():
+    file_path = r'E:/PROJRCT%20XOME/Cbpo%20Ext(u)_1/Neighborhood.html'
+    chrome_options = Options()
+    chrome_options.add_argument("--start-fullscreen") 
+    driver = webdriver.Chrome(options=chrome_options)
+    file_url = 'file:///' + file_path.replace('\\', '/')
+    driver.get(file_url)
+    return driver
+
+def openchrome3():
+    file_path = r'E:/PROJRCT%20XOME/Cbpo%20Ext(u)_1/Marketprice.html'
+    chrome_options = Options()
+    chrome_options.add_argument("--start-fullscreen") 
+    driver = webdriver.Chrome(options=chrome_options)
+    file_url = 'file:///' + file_path.replace('\\', '/')
+    driver.get(file_url)
+    return driver
+
         #===============================================================================================#

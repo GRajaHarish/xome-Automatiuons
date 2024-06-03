@@ -9,11 +9,14 @@ import json
 
 
 def condition_data(merged_data,subclient):
+          merged_data['isProperty_Currently_yes']= 'yes'
           if merged_data['SubPropCond'] not in ["Fair","Poor"]:
                if "Multi Family" in merged_data['Subtype']:
                     subject_property_condition="Tenant"
+                    merged_data['Percentage_of_Owners']="50%"
                else :
                     subject_property_condition="Owner"
+                    merged_data['Percentage_of_Owners']="85%" 
           merged_data['subject_property_condition']=subject_property_condition 
           if "Mob/manufactured" not in merged_data['Subtype']:
                merged_data['manufactured']="NA"   
@@ -63,6 +66,11 @@ def condition_data(merged_data,subclient):
           merged_data['Sold2Gar']=compgar(merged_data['Sold2Gar'])
           merged_data['Sold3Gar']=compgar(merged_data['Sold3Gar'])
           try:
+               merged_data['AsIs90Day']="423829"
+               print(merged_data['AsIs90Day'])
+               merged_data['AsIs90Day_2']=str(int(merged_data['AsIs90Day']) + 5000)
+               merged_data['30daysQale']=str(int(merged_data['AsIs90Day']) - 5000)
+               
                merged_data['Leased1_address'],merged_data['Leased1_city'],merged_data['Leased1_state'], merged_data['Leased1_zipcode'],merged_data['Leased1_total_rooms']=adres_split(merged_data['Leased1Add'],merged_data['Leased1Bed'])
           except Exception as e:
                print("exception in rental address please check",e)
@@ -206,23 +214,6 @@ def condition_data(merged_data,subclient):
                merged_data['Years']=''
                merged_data['State']=''
                merged_data['Expiration Date']=''
-          #print(merged_data['Years'])
-
-          # try:
-          #      if merged_data['SubGarType'] in ['None','Driveway','Undefined']:
-          #                merged_data['Subject_garage']='0'
-          #                merged_data['Subject_garage_type']='On Street'
-          #      else:
-          #           subgar=merged_data['SubGarType']
-          #           merged_data['Subject_garage']=subgar.split(' ')[0].strip()
-          #           merged_data['Subject_garage_type']=subgar.split(' ')[2].strip()
-          # except Exception as e:    
-          #      print("exception in Address_state please check",e)
-          #      merged_data['Subject_garage']='0'
-          #      merged_data['Subject_garage_type']='On Street'  
-
-          #merged_data['Subject_garage']=subject_garage(merged_data['SubGarType'])  
-
           if merged_data['Rent']=='0':
                     merged_data['Rent']=""
           else:
@@ -257,6 +248,8 @@ def condition_data(merged_data,subclient):
                merged_data['SubListComp_sold']=''
                merged_data['OwnerName_sold']='' 
                merged_data['Listingcompany_sold']='' 
+               merged_data['isProperty_Currently_yes']= 'yes'
+              
 
                if "Active" in merged_data['SubStatus'] or "Pending" in merged_data['SubStatus']:
                     merged_data['SubList_active']="Yes"
@@ -285,6 +278,7 @@ def condition_data(merged_data,subclient):
                          merged_data['Listingcompany_active']=merged_data['SubListComp']         
 
                if "Sold" in merged_data['SubStatus']:
+
                     merged_data['SubList_sold']="Yes"
                     merged_data['Analysis_Comments']="The subject is recently sold"
                     if merged_data['SubListPrice']=='':
@@ -319,11 +313,13 @@ def condition_data(merged_data,subclient):
                merged_data['OwnerName_active']='' 
                merged_data['Listingcompany_active']='' 
                merged_data['SubList_sold']="No"
+               merged_data['SubList_Not_sold']="No"
                merged_data['SubListPrice_sold']=''
                merged_data['SubListDate_sold']=''
                merged_data['SubListComp_sold']=''
                merged_data['OwnerName_sold']='' 
                merged_data['Listingcompany_sold']='' 
+               merged_data['isProperty_Currently_no']='no'
                merged_data['Analysis_Comments']='No recent sales/listing history available'
 
           #Hoa
@@ -433,7 +429,15 @@ def condition_data(merged_data,subclient):
 
           yesterday = yesterday_date_conversion()
           merged_data['Inspection_Date']=yesterday
-          try:
+          try: 
+               merged_data['Act1sqft']= round(float(merged_data['Act1Lot'])*43560)
+               merged_data['Act2sqft']= round(float(merged_data['Act2Lot'])*43560)
+               merged_data['Act3sqft']= round(int(float(merged_data['Act3Lot'])*43560))
+               print(merged_data['Act3sqft'])
+               merged_data['Sold1sqft']= round(float(merged_data['Sold1Lot'])*43560)
+               merged_data['Sold2sqft']= round(float(merged_data['Sold2Lot'])*43560)
+               merged_data['Sold3sqft']= round(float(merged_data['Sold3Lot'])*43560)
+               merged_data['SubLotsq']= round(float(merged_data['SubLotac'])*43560)
                merged_data['SubjectListDate']=date_conversion(merged_data['SubListDate'])    
                merged_data['Comp4_Sold_Date']=date_conversion(merged_data['compsolddate4'])    
                merged_data['Comp5_Sold_Date']=date_conversion(merged_data['compsolddate5'])    
