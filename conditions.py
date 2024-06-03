@@ -24,6 +24,10 @@ def condition_data(merged_data,subclient):
                merged_data['manufactured']="" 
 
           if "Multi Family" in merged_data['Subtype']:
+                   merged_data['Percentage_of_Owners']="50%"
+          else :
+               merged_data['Percentage_of_Owners']="85%" 
+          if "Multi Family" in merged_data['Subtype']:
                    Predominant_Occupancy=" Tenant"
                    Predominant_Occupancy_gos="Tenant"
           else :
@@ -766,7 +770,9 @@ def condition_data(merged_data,subclient):
           merged_data['Sold1Bed'] = convert_to_int(merged_data['Sold1Bed'])
           merged_data['Sold2Bed'] = convert_to_int(merged_data['Sold2Bed'])
           merged_data['Sold3Bed'] = convert_to_int(merged_data['Sold3Bed'])
-
+          merged_data['AsIsSale']=merged_data['Sugmv']
+          merged_data['AsIsList']=str(int(merged_data['Sugmv'])+5000)
+          merged_data['AsIsQuick_Sale']=str(int(merged_data['Sugmv'])-5000)
           logging.info("Afetr Checking Conditions Merged Data:{}".format(merged_data))
 
 
