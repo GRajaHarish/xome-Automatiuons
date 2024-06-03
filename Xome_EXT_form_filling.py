@@ -71,7 +71,7 @@ class Formnewbpoext:
                                              
    
                 elif "Neighborhood" in page_data:
-                    chrome= openchrome2()
+                    driver= openchrome2()
                     for control in page_data["Neighborhood"]:
                         print(control["filedtype"])
                         for field in control["values"]:
@@ -79,7 +79,7 @@ class Formnewbpoext:
                             
                             if filedtype == "Textbox":
                                 print(field)
-                                data_filling_text( chrome,merged_json[field[0]], field[1], field[2])
+                                data_filling_text( driver,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: data_filling_text( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
                             elif filedtype == "select_data1":
@@ -112,7 +112,7 @@ class Formnewbpoext:
                                 
 
                 elif "Comparable" in page_data:
-                    cdriver=openchrome()
+                    driver=openchrome()
                     for control in page_data["Comparable"]:
                         print(control["filedtype"])
                         for field in control["values"]:
@@ -120,7 +120,7 @@ class Formnewbpoext:
                             
                             if filedtype == "Textbox":
                                 print(field)
-                                data_filling_text( cdriver,merged_json[field[0]], field[1], field[2])
+                                data_filling_text( driver,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: data_filling_text( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
                             elif filedtype == "select_data1":
