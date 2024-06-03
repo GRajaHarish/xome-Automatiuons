@@ -42,11 +42,11 @@ class Formnewbpoext:
                                 data_filling_text(driver,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: data_filling_text( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
-                            elif filedtype == "select_data1":
+                            elif filedtype == "select_data11":
                                 select_field( driver,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: select_field( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
-                            elif filedtype == "radiobutton_data":
+                            elif filedtype == "radiobutton_data1":
                                 radio_btn_click( driver,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: radio_btn_click( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
@@ -55,11 +55,11 @@ class Formnewbpoext:
                                 data_filling_text(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: data_filling_text( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
-                            elif filedtype == "select_default":
+                            elif filedtype == "select_default1":
                                 select_field(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: select_field( {field[0]}, {field[1]}, {field[2]})")
                             
-                            elif filedtype == "radiobutton_default":
+                            elif filedtype == "radiobutton_default1":
                                 radio_btn_click(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: radio_btn_click( {field[0]}, {field[1]}, {field[2]})")
                             
@@ -82,11 +82,11 @@ class Formnewbpoext:
                                 data_filling_text( chrome,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: data_filling_text( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
-                            elif filedtype == "select_data":
+                            elif filedtype == "select_data1":
                                 select_field( driver,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: select_field( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
-                            elif filedtype == "radiobutton_data":
+                            elif filedtype == "radiobutton_data1":
                                 radio_btn_click( driver,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: radio_btn_click( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
@@ -95,11 +95,11 @@ class Formnewbpoext:
                                 data_filling_text(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: data_filling_text( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
-                            elif filedtype == "select_default":
+                            elif filedtype == "select_default1":
                                 select_field(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: select_field( {field[0]}, {field[1]}, {field[2]})")
                             
-                            elif filedtype == "radiobutton_default":
+                            elif filedtype == "radiobutton_default1":
                                 radio_btn_click(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: radio_btn_click( {field[0]}, {field[1]}, {field[2]})")
                             
@@ -123,11 +123,11 @@ class Formnewbpoext:
                                 data_filling_text( cdriver,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: data_filling_text( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
-                            elif filedtype == "select_data":
+                            elif filedtype == "select_data1":
                                 select_field( driver,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: select_field( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
-                            elif filedtype == "radiobutton_data":
+                            elif filedtype == "radiobutton_data1":
                                 radio_btn_click( driver,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: radio_btn_click( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
@@ -136,11 +136,11 @@ class Formnewbpoext:
                                 data_filling_text(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: data_filling_text( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
-                            elif filedtype == "select_default":
+                            elif filedtype == "select_default1":
                                 select_field(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: select_field( {field[0]}, {field[1]}, {field[2]})")
                             
-                            elif filedtype == "radiobutton_default":
+                            elif filedtype == "radiobutton_default1":
                                 radio_btn_click(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: radio_btn_click( {field[0]}, {field[1]}, {field[2]})")
                             
@@ -162,11 +162,11 @@ class Formnewbpoext:
                                 data_filling_text( driver,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: data_filling_text( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
-                            elif filedtype == "select_data":
+                            elif filedtype == "select_data1":
                                 select_field( driver,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: select_field( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
-                            elif filedtype == "radiobutton_data":
+                            elif filedtype == "radiobutton_data1":
                                 radio_btn_click( driver,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: radio_btn_click( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
@@ -175,11 +175,11 @@ class Formnewbpoext:
                                 data_filling_text(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: data_filling_text( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
-                            elif filedtype == "select_default":
+                            elif filedtype == "select_default1":
                                 select_field(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: select_field( {field[0]}, {field[1]}, {field[2]})")
                             
-                            elif filedtype == "radiobutton_default":
+                            elif filedtype == "radiobutton_default1":
                                 radio_btn_click(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: radio_btn_click( {field[0]}, {field[1]}, {field[2]})")
                             
@@ -202,11 +202,11 @@ class Formnewbpoext:
                                 data_filling_text( driver,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: data_filling_text( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
-                            elif filedtype == "select_data":
+                            elif filedtype == "select_data1":
                                 select_field( driver,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: select_field( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
-                            elif filedtype == "radiobutton_data":
+                            elif filedtype == "radiobutton_data1":
                                 radio_btn_click( driver,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: radio_btn_click( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
@@ -215,11 +215,11 @@ class Formnewbpoext:
                                 data_filling_text(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: data_filling_text( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
-                            elif filedtype == "select_default":
+                            elif filedtype == "select_default1":
                                 select_field(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: select_field( {field[0]}, {field[1]}, {field[2]})")
                             
-                            elif filedtype == "radiobutton_default":
+                            elif filedtype == "radiobutton_default1":
                                 radio_btn_click(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: radio_btn_click( {field[0]}, {field[1]}, {field[2]})")
                             
@@ -242,11 +242,11 @@ class Formnewbpoext:
                                 data_filling_text( driver,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: data_filling_text( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
-                            elif filedtype == "select_data":
+                            elif filedtype == "select_data1":
                                 select_field( driver,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: select_field( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
-                            elif filedtype == "radiobutton_data":
+                            elif filedtype == "radiobutton_data1":
                                 radio_btn_click( driver,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: radio_btn_click( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
@@ -255,11 +255,11 @@ class Formnewbpoext:
                                 data_filling_text(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: data_filling_text( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
-                            elif filedtype == "select_default":
+                            elif filedtype == "select_default1":
                                 select_field(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: select_field( {field[0]}, {field[1]}, {field[2]})")
                             
-                            elif filedtype == "radiobutton_default":
+                            elif filedtype == "radiobutton_default1":
                                 radio_btn_click(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: radio_btn_click( {field[0]}, {field[1]}, {field[2]})")
                             
