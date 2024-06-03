@@ -9,6 +9,7 @@ import logging
 from FormProcessing.Xome_form_processing import FormFilling
 #from webdriver_anager.chrome import ChromeDriverManager
 from queue import Queue
+from conditions import condition_data
 result_queue = Queue()
 def formdata_fetching_db(result_queue):
     tfsorder_id='1231287'
@@ -109,6 +110,7 @@ def formdata_fetching_db(result_queue):
                             #print("Merged JSON:", merged_json)
                             #logging.info("Merged JSON:: {}".format(merged_json))
                             result_queue.put(merged_json)
+                            merged_json=condition_data(merged_json,'Green Realty')
                             print("Data is empty.")
                             with open('xome.json') as f:
                                 data = json.load(f)

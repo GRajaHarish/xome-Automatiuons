@@ -20,7 +20,7 @@ class Formnewbpoext:
     def form(self,merged_json,order_id,data):
         # from StatusChange import statuschange
         #merged_json=condition_data(merged_json)
-        file_path = r'C:\Users\mdm460\Downloads\Subject.html'
+        file_path = r'D:\Cbpo Ext(u)\Subject.html'
         chrome_options = Options()
         chrome_options.add_argument("--start-fullscreen") 
         driver = webdriver.Chrome(options=chrome_options)
@@ -64,15 +64,15 @@ class Formnewbpoext:
                             
                             elif filedtype == "Textbox_default":
                                 print(field)
-                                data_filling_text( field[0], field[1], field[2])
+                                data_filling_text(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: data_filling_text( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
                             elif filedtype == "select_default":
-                                select_field( field[0], field[1], field[2])
+                                select_field(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: select_field( {field[0]}, {field[1]}, {field[2]})")
                             
                             elif filedtype == "radiobutton_default":
-                                radio_btn_click( field[0], field[1], field[2])
+                                radio_btn_click(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: radio_btn_click( {field[0]}, {field[1]}, {field[2]})")
                             
                             elif filedtype == "date_fill_javascript":
@@ -118,15 +118,15 @@ class Formnewbpoext:
                             
                             elif filedtype == "Textbox_default":
                                 print(field)
-                                data_filling_text( field[0], field[1], field[2])
+                                data_filling_text(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: data_filling_text( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
                             elif filedtype == "select_default":
-                                select_field( field[0], field[1], field[2])
+                                select_field(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: select_field( {field[0]}, {field[1]}, {field[2]})")
                             
                             elif filedtype == "radiobutton_default":
-                                radio_btn_click( field[0], field[1], field[2])
+                                radio_btn_click(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: radio_btn_click( {field[0]}, {field[1]}, {field[2]})")
                             
                             elif filedtype == "date_fill_javascript":
@@ -163,15 +163,15 @@ class Formnewbpoext:
                             
                             elif filedtype == "Textbox_default":
                                 print(field)
-                                data_filling_text( field[0], field[1], field[2])
+                                data_filling_text(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: data_filling_text( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
                             elif filedtype == "select_default":
-                                select_field( field[0], field[1], field[2])
+                                select_field(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: select_field( {field[0]}, {field[1]}, {field[2]})")
                             
                             elif filedtype == "radiobutton_default":
-                                radio_btn_click( field[0], field[1], field[2])
+                                radio_btn_click(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: radio_btn_click( {field[0]}, {field[1]}, {field[2]})")
                             
                             elif filedtype == "date_fill_javascript":
@@ -208,15 +208,15 @@ class Formnewbpoext:
                             
                             elif filedtype == "Textbox_default":
                                 print(field)
-                                data_filling_text( field[0], field[1], field[2])
+                                data_filling_text(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: data_filling_text( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
                             elif filedtype == "select_default":
-                                select_field( field[0], field[1], field[2])
+                                select_field(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: select_field( {field[0]}, {field[1]}, {field[2]})")
                             
                             elif filedtype == "radiobutton_default":
-                                radio_btn_click( field[0], field[1], field[2])
+                                radio_btn_click(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: radio_btn_click( {field[0]}, {field[1]}, {field[2]})")
                             
                             elif filedtype == "date_fill_javascript":
@@ -254,15 +254,15 @@ class Formnewbpoext:
                             
                             elif filedtype == "Textbox_default":
                                 print(field)
-                                data_filling_text( field[0], field[1], field[2])
+                                data_filling_text(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: data_filling_text( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
                             elif filedtype == "select_default":
-                                select_field( field[0], field[1], field[2])
+                                select_field(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: select_field( {field[0]}, {field[1]}, {field[2]})")
                             
                             elif filedtype == "radiobutton_default":
-                                radio_btn_click( field[0], field[1], field[2])
+                                radio_btn_click(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: radio_btn_click( {field[0]}, {field[1]}, {field[2]})")
                             
                             elif filedtype == "date_fill_javascript":
@@ -299,15 +299,15 @@ class Formnewbpoext:
                             
                             elif filedtype == "Textbox_default":
                                 print(field)
-                                data_filling_text( field[0], field[1], field[2])
+                                data_filling_text(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: data_filling_text( driver,merged_json[{field[0]}], {field[1]}, {field[2]})")
                             
                             elif filedtype == "select_default":
-                                select_field( field[0], field[1], field[2])
+                                select_field(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: select_field( {field[0]}, {field[1]}, {field[2]})")
                             
                             elif filedtype == "radiobutton_default":
-                                radio_btn_click( field[0], field[1], field[2])
+                                radio_btn_click(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: radio_btn_click( {field[0]}, {field[1]}, {field[2]})")
                             
                             elif filedtype == "date_fill_javascript":
@@ -332,12 +332,12 @@ class Formnewbpoext:
                                 
             time.sleep(2)
             
-            statuschange(order_id,"26","3","14")
+            # statuschange(order_id,"26","3","14")
             print("pls wait")
         except Exception as e:
             traceback.print_exc()
              # Optionally, you can also log the exception
             print("An exception occurred:", str(e))
-            statuschange(order_id,"27","3","14")
+            # statuschange(order_id,"27","3","14")
             print("Not Completed")
         #===============================================================================================#

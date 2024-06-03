@@ -1,1959 +1,1949 @@
 {
-    "page":[
-       {
-          "Subject_info":[
-             {
-                "filedtype":"Textbox",
-                "values":[
+   "page":[
+      {
+        "Subject_info": [
+           {
+               "filedtype": "Textbox",
+               "values": [
                    [
-                      "APN",
-                      "//*[@id='textfield-1078-inputEl']",
-                      "xpath"
+                       "APN",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[1]/div/div/div/div/div[3]/div/div/div/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "Textbox",
+               "values": [
                    [
-                      "LegalDesc",
-                      "//*[@id='textfield-1080-inputEl']",
-                      "xpath"
+                       "LegalDesc",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[1]/div/div/div/div/div[5]/div/div/div/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "select_data",
+               "values": [
                    [
-                      "Subtype",
-                      "//*[@id='combobox-1081-inputEl']",
-                      "xpath"
+                       "Subtype",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[1]/div/div/div/div/div[6]/div/div/div[1]/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "Textbox",
+               "values": [
                    [
-                      "SubUnits",
-                      "//*[@id='numberfield-1083-inputEl']",
-                      "xpath"
+                       "SubUnits",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[1]/div/div/div/div/div[8]/div/div/div[1]/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "Textbox_default",
+               "values": [
                    [
-                      "Zoning_Classification",
-                      "//*[@id='combobox-1089-inputEl']",
-                      "xpath"
+                       "Residential",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[1]/div/div/div/div/div[9]/div/div/div[1]/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"select_default",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "select_default",
+               "values": [
                    [
-                      "Legal",
-                      "//*[@id='combobox-1090-inputEl']",
-                      "xpath"
+                       "Legal",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[1]/div/div/div/div/div[10]/div/div/div[1]/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "Textbox",
+               "values": [
                    [
-                      "Solar_Panels",
-                      "//*[@id='combobox-1091-inputEl']",
-                      "xpath"
+                       "Solar_Panels",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[1]/div/div/div/div/div[11]/div/div/div[1]/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"radiobutton_data",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "radiobutton_data",
+               "values": [
                    [
-                      "SubStatus",
-                      "//*[@id='datefield-1096-inputEl']",
-                      "xpath",
-                      "yes"
+                       "SubList",
+                       "//input[@name='Subject.PreviouslyListed']",
+                       "xpath",
+                       "yes"
                    ],
                    [
-                      "SubStatus",
-                      "//*[@id='datefield-1097-inputEl']",
-                      "xpath",
-                      "no"
+                       "SubList",
+                       "//input[@name='Subject.PreviouslyListed']",
+                       "xpath",
+                       "no"
                    ]
-                ]
-             },
-             {
-                "filedtype":"text",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "text",
+               "values": [
                    [
-                      "Current List Price",
-                      "//*[@id='mbxautocurrencyfield-1099-inputEl']",
-                      "xpath"
+                       "Current List Price",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[1]/div/div/div/div/div[17]/div/div/div/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"text",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "text",
+               "values": [
                    [
-                      "Current Listing Type",
-                      "//*[@id='combobox-1100-inputEl']",
-                      "xpath"
+                       "Current Listing Type",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[1]/div/div/div/div/div[18]/div/div/div[1]/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"text",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "text",
+               "values": [
                    [
-                      "CDOM",
-                      "//*[@id='numberfield-1101-inputEl']",
-                      "xpath"
+                       "CDOM",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[1]/div/div/div/div/div[19]/div/div/div[1]/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"radiobutton_data",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "radiobutton_data",
+               "values": [
                    [
-                      "PropertySold",
-                      "//*[@id='radio-1105-inputEl']",
-                      "xpath",
-                      "yes"
+                       "PropertySold",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[2]/div/div/div/div/div[1]/div/div/table/tbody/tr/td[1]/div/div/div/span/input",
+                       "xpath",
+                       "yes"
                    ],
                    [
-                      "PropertySold",
-                      "//*[@id='radio-1106-inputEl']",
-                      "xpath",
-                      "no"
+                       "PropertySold",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[2]/div/div/div/div/div[1]/div/div/table/tbody/tr/td[2]/div/div/div/span/input",
+                       "xpath",
+                       "no"
                    ]
-                ]
-             },
-             {
-                "filedtype":"text",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "text",
+               "values": [
                    [
-                      "Original List Date",
-                      "//*[@id='datefield-1107-inputEl']",
-                      "xpath"
+                       "Original List Date",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[2]/div/div/div/div/div[2]/div/div/div[1]/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"text",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "text",
+               "values": [
                    [
-                      "",
-                      "//*[@id='mbxautocurrencyfield-1108-inputEl']",
-                      "xpath"
+                       "",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[2]/div/div/div/div/div[3]/div/div/div/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"text",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "text",
+               "values": [
                    [
-                      "SubReoSSale",
-                      "//*[@id='combobox-1109-inputEl']",
-                      "xpath"
+                       "SubReoSSale",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[2]/div/div/div/div/div[4]/div/div/div[1]/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"text",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "text",
+               "values": [
                    [
-                      "Original List Days on Market",
-                      "//*[@id='numberfield-1110-inputEl']",
-                      "xpath"
+                       "Original List Days on Market",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[2]/div/div/div/div/div[5]/div/div/div[1]/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"text",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "text",
+               "values": [
                    [
-                      "SubListDate",
-                      "//*[@id='datefield-1111-inputEl']",
-                      "xpath"
+                       "SubListDate",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[2]/div/div/div/div/div[6]/div/div/div[1]/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"text",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "text",
+               "values": [
                    [
-                      "SubListPrice",
-                      "//*[@id='mbxautocurrencyfield-1112-inputEl']",
-                      "xpath"
+                       "SubListPrice",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[2]/div/div/div/div/div[7]/div/div/div/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "select_data",
+               "values": [
                    [
-                      "SubReoSSale",
-                      "//*[@id='combobox-1113-inputEl']",
-                      "xpath"
+                       "SubReoSSale",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[2]/div/div/div/div/div[8]/div/div/div[1]/input",
+                       "xpath"
                    ]
-                ]
-             }
-          ]
-       },
-       {
-          "Neighborhood":[
-             {
-                "filedtype":"select_data",
-                "values":[
+               ]
+           }
+       ]
+      },
+      {
+        "Neighborhood": [
+           {
+               "filedtype": "select_data",
+               "values": [
                    [
-                      "",
-                      "//*[@id='combobox-2023-inputEl']",
-                      "xpath"
+                       "",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div[1]/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"Textbox_default",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "Textbox_default",
+               "values": [
                    [
-                      "How did you determine the occupancy",
-                      "//*[@id='mbxlimitedtextarea-2024-inputEl']",
-                      "xpath"
+                       "How did you determine the occupancy",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[1]/div/div/div/div/div[2]/div/div[1]/div/textarea",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "Textbox",
+               "values": [
                    [
-                      "Percentage_of_Owners",
-                      "//*[@id='numberfield-2026-inputEl']",
-                      "xpath"
+                       "Percentage_of_Owners",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[1]/div/div/div/div/div[4]/div/div/div[1]/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "text",
+               "values": [
                    [
-                      "Percentage_of_Tenants",
-                      "//*[@id='numberfield-2027-inputEl']",
-                      "xpath"
+                       "REO_driven",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[1]/div/div/div/div/div[6]/div/div/div[1]/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"text",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "text",
+               "values": [
                    [
-                      "REO_driven",
-                      "//*[@id='combobox-2028-inputEl']",
-                      "xpath"
+                       "SubPopdensity",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[1]/div/div/div/div/div[7]/div/div/div[1]/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"text",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "Textbox_default",
+               "values": [
                    [
-                      "SubPopdensity",
-                      "//*[@id='combobox-2029-inputEl']",
-                      "xpath"
+                       "95",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[1]/div/div/div/div/div[8]/div/div/div[1]/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"Textbox_default",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "Textbox",
+               "values": [
                    [
-                      "95",
-                      "//*[@id='numberfield-2030-inputEl']",
-                      "xpath"
+                       "Minimum_Value_cal",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[1]/div/div/div/div/fieldset/div/div/div/div[1]/div/div/div/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "Textbox",
+               "values": [
                    [
-                      "Minimum_Value_cal",
-                      "//*[@id='mbxautocurrencyfield-2032-inputEl']",
-                      "xpath"
+                       "Maximum_Value_cal",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[1]/div/div/div/div/fieldset/div/div/div/div[2]/div/div/div/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "Textbox",
+               "values": [
                    [
-                      "Maximum_Value_cal",
-                      "//*[@id='mbxautocurrencyfield-2033-inputEl']",
-                      "xpath"
+                       "Typical_Marketing_Time",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[2]/div/div/div/div/div[1]/div/div/div[1]/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "text",
+               "values": [
                    [
-                      "Typical_Marketing_Time",
-                      "//*[@id='combobox-2040-inputEl']",
-                      "xpath"
+                       "Comps Currently Listed",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[3]/div/div/div/div/fieldset/div/div/div/div[1]/div/div/div[1]/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"text",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "Textbox",
+               "values": [
                    [
-                      "Comps Currently Listed",
-                      "//*[@id='numberfield-2045-inputEl']",
-                      "xpath"
+                       "Minimum_Value_comp",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[3]/div/div/div/div/fieldset/div/div/div/div[2]/div/div/div/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "Textbox",
+               "values": [
                    [
-                      "Minimum_Value_comp",
-                      "//*[@id='mbxautocurrencyfield-2046-inputEl']",
-                      "xpath"
+                       "Maximum_Value_comp",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[3]/div/div/div/div/fieldset/div/div/div/div[3]/div/div/div/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "text",
+               "values": [
                    [
-                      "Maximum_Value_comp",
-                      "//*[@id='mbxautocurrencyfield-2047-inputEl']",
-                      "xpath"
+                       "SubList",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[4]/div/div/div/div/fieldset/div/div/div/div[1]/div/div/div[1]/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"text",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "Textbox",
+               "values": [
                    [
-                      "SubList",
-                      "//*[@id='numberfield-2050-inputEl']",
-                      "xpath"
+                       "Minimum_Value_list",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[4]/div/div/div/div/fieldset/div/div/div/div[2]/div/div/div/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
+               ]
+           },
+           {
+               "filedtype": "Textbox",
+               "values": [
                    [
-                      "Minimum_Value_list",
-                      "//*[@id='mbxautocurrencyfield-2051-inputEl']",
-                      "xpath"
+                       "Maximum_Value_list",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[4]/div/div/div/div/fieldset/div/div/div/div[3]/div/div/div/input",
+                       "xpath"
                    ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "Maximum_Value_list",
-                      "//*[@id='mbxautocurrencyfield-2052-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             }
-          ]
-       },
+               ]
+           }
+       ]
+      },
        {
           "MarketPrice":[
              {
                 "filedtype":"Textbox",
                 "values":[
                    [
-                      "AsIs90Day",
-                      "//*[@id='mbxautocurrencyfield-2062-inputEl']",
+                      "AsIsSale",
+                      "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[6]/div[2]/div/div/div/div[1]/div/div/div/div/div[3]/div/div/table/tbody/tr[2]/td[2]/div/div/div/div/input",
                       "xpath"
                    ]
                 ]
              },
+             {
+               "filedtype":"Textbox",
+               "values":[
+                  [
+                     "Repaired90Day",
+                     "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[6]/div[2]/div/div/div/div[1]/div/div/div/div/div[3]/div/div/table/tbody/tr[2]/td[3]/div/div/div/div/input",
+                     "xpath"
+                  ]
+               ]
+            },
              {
                 "filedtype":"Textbox",
                 "values":[
                    [
-                      "Repaired90Day",
-                      "//*[@id='mbxautocurrencyfield-2063-inputEl']",
+                      "AsIsList",
+                      "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[6]/div[2]/div/div/div/div[1]/div/div/div/div/div[3]/div/div/table/tbody/tr[3]/td[2]/div/div/div/div/input",
                       "xpath"
                    ]
                 ]
              },
+             {
+               "filedtype":"Textbox",
+               "values":[
+                  [
+                     "Repaired120Day",
+                     "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[6]/div[2]/div/div/div/div[1]/div/div/div/div/div[3]/div/div/table/tbody/tr[3]/td[3]/div/div/div/div/input",
+                     "xpath"
+                  ]
+               ]
+            },
              {
                 "filedtype":"Textbox",
                 "values":[
                    [
-                      "AsIs120Day",
-                      "//*[@id='mbxautocurrencyfield-2065-inputEl']",
+                      "AsIsQuick_Sale",
+                      "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[6]/div[2]/div/div/div/div[1]/div/div/div/div/div[4]/div/div/div/input",
                       "xpath"
                    ]
                 ]
              },
              {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "Repaired120Day",
-                      "//*[@id='mbxautocurrencyfield-2066-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "Day_Quick_Sale",
-                      "//*[@id='mbxautocurrencyfield-2067-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "Date_of_Inspection",
-                      "//*[@id='datefield-2068-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "Estimated_Marketing_Time",
-                      "//*[@id='combobox-2069-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"Textbox_default",
-                "values":[
-                   [
-                      "Summary_cmd",
-                      "//*[@id='mbxlimitedtextarea-2079-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             }
+               "filedtype":"Textbox",
+               "values":[
+                  [
+                     "Date_of_Inspection",
+                     "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[6]/div[2]/div/div/div/div[1]/div/div/div/div/div[5]/div/div/div[1]/input",
+                     "xpath"
+                  ]
+               ]
+            },
+            {
+               "filedtype":"Textbox",
+               "values":[
+                  [
+                     "Estimated_Marketing_Time",
+                     "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[6]/div[2]/div/div/div/div[1]/div/div/div/div/div[6]/div/div/div[1]/input",
+                     "xpath"
+                  ]
+               ]
+            },
+            {
+               "filedtype":"Textbox_default",
+               "values":[
+                  [
+                     "Summary_cmd",
+                     "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[6]/div[2]/div/div/div/div[2]/div/div/div/div/div[3]/div/div[1]/div/textarea",
+                     "xpath"
+                  ]
+               ]
+            }
           ]
        },
        {
-          "Comparable":[
-             {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "SubMLS",
-                      "//*[@id='textfield-1251-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_default",
-                "values":[
-                   [
-                      "County Tax",
-                      "//*[@id='combobox-1259-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "SubjectSaleType",
-                      "//*[@id='combobox-1291-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"date_fill_javascript",
-                "values":[
-                   [
-                      "SubListDate_active",
-                      "//*[@id='datefield-1299-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Subject_property_type",
-                      "//*[@id='combobox-1331-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Substyle",
-                      "//*[@id='combobox-1363-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "Substories",
-                      "//*[@id='numberfield-1371-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Substories",
-                      "//*[@id='numberfield-1379-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "SubYBu",
-                      "//*[@id='numberfield-1387-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "SubLotsq",
-                      "//*[@id='numberfield-1396-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "SubYBu",
-                      "//*[@id='numberfield-1432-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "SubBase",
-                      "//*[@id='combobox-1448-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "SubUnits",
-                      "//*[@id='numberfield-1525-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Subject_total_rooms",
-                      "//*[@id='numberfield-1533-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "SubBed",
-                      "//*[@id='numberfield-1542-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "SubFBath",
-                      "//*[@id='numberfield-1544-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "SubView",
-                      "//*[@id='combobox-1742-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "SubView",
-                      "//*[@id='combobox-1782-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "Rent",
-                      "//*[@id='mbxautocurrencyfield-1822-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Subject_garage",
-                      "//*[@id='GarCarType_Subject']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "SubCarporttype",
-                      "//*[@id='numberfield-1878-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"Textbox_default",
-                "values":[
-                   [
-                      "0",
-                      "//*[@id='numberfield-1886-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_default",
-                "values":[
-                   [
-                      "Fee Simple",
-                      "//*[@id='combobox-1894-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "None",
-                      "//*[@id='textfield-1902-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "SubDiv",
-                      "//*[@id='textfield-1950-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "SubDiv",
-                      "//*[@id='textfield-1958-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "Comp4_street_address",
-                      "//*[@id='mbxautocompletefield-1207-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp4_city",
-                      "//*[@id='textfield-1215-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp4_zipcode",
-                      "//*[@id='mbxautozipfield-1229-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Sold1MLS",
-                      "//*[@id='mbxautocompletefield-1252-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Sold1Price",
-                      "//*[@id='mbxautocurrencyfield-1276-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "compactiveprice4",
-                      "//*[@id='mbxautocurrencyfield-1284-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_default",
-                "values":[
-                   [
-                      "MLS",
-                      "//*[@id='combobox-1260-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "SubjectSaleType",
-                      "//*[@id='combobox-1292-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"date_fill_javascript",
-                "values":[
-                   [
-                      "Comp4_Active_Date",
-                      "//*[@id='datefield-1300-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Subject_property_type",
-                      "//*[@id='combobox-1332-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Sol1Style",
-                      "//*[@id='combobox-1364-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Sol1Story_eval",
-                      "//*[@id='numberfield-1372-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Sol1Story_eval",
-                      "//*[@id='numberfield-1380-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "Sold1Yrbuilt",
-                      "//*[@id='YearBuilt_SoldComp1']",
-                      "xpath"
-                   ],
-                   [
-                      "Sold1sqft",
-                      "//*[@id='numberfield-1400-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Sold1Gla",
-                      "//*[@id='numberfield-1433-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Comp4_basement",
-                      "//*[@id='combobox-1449-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "SubUnits",
-                      "//*[@id='numberfield-1526-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp4_total_rooms",
-                      "//*[@id='numberfield-1534-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Sold1Bed",
-                      "//*[@id='numberfield-1546-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Sold1Bath",
-                      "//*[@id='numberfield-1548-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Sold1_Prop_Cond",
-                      "//*[@id='combobox-1727-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp4_viewtype",
-                      "//*[@id='combobox-1743-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp4_viewtype",
-                      "//*[@id='combobox-1767-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp4_viewtype",
-                      "//*[@id='combobox-1783-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_default",
-                "values":[
-                   [
-                      "Conventional",
-                      "//*[@id='combobox-1799-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Sold1Gar",
-                      "//*[@id='numberfield-1855-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_default",
-                "values":[
-                   [
-                      "0",
-                      "//*[@id='numberfield-1887-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Subject_Feesimple",
-                      "//*[@id='combobox-1895-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_default",
-                "values":[
-                   [
-                      "None",
-                      "//*[@id='textfield-1903-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "Comp5_street_address",
-                      "//*[@id='mbxautocompletefield-1208-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp5_city",
-                      "//*[@id='textfield-1216-inputEl]",
-                      "xpath"
-                   ],
-                   [
-                      "Comp5_zipcode",
-                      "//*[@id='mbxautozipfield-1233-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Sold2MLS",
-                      "//*[@id='mbxautocompletefield-1253-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Sold2Price",
-                      "//*[@id='mbxautocurrencyfield-1277-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "compactiveprice5",
-                      "//*[@id='mbxautocurrencyfield-1285-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_default",
-                "values":[
-                   [
-                      "MLS",
-                      "//*[@id='combobox-1261-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"date_fill_javascript",
-                "values":[
-                   [
-                      "Comp5_Active_Date",
-                      "//*[@id='datefield-1301-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Subject_property_type",
-                      "//*[@id='combobox-1333-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Sol2Style",
-                      "//*[@id='combobox-1365-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Sol2Story_eval",
-                      "//*[@id='numberfield-1373-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Sol2Story_eval",
-                      "//*[@id='numberfield-1381-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "Sold2Yrbuilt",
-                      "//*[@id='numberfield-1389-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Sold2sqft",
-                      "//*[@id='numberfield-1404-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Sold2Gla",
-                      "//*[@id='numberfield-1434-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Comp5_basement",
-                      "//*[@id='combobox-1450-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "SubUnits",
-                      "//*[@id='numberfield-1527-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp5_total_rooms",
-                      "//*[@id='numberfield-1535-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Sold2Bed",
-                      "//*[@id='numberfield-1550-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Sold2Bath",
-                      "//*[@id='numberfield-1552-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Sold2_Prop_Cond",
-                      "//*[@id='combobox-1728-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp5_viewtype",
-                      "//*[@id='combobox-1744-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp5_viewtype",
-                      "//*[@id='combobox-1768-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp5_viewtype",
-                      "//*[@id='combobox-1784-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_default",
-                "values":[
-                   [
-                      "Conventional",
-                      "//*[@id='combobox-1800-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Sold2Gar",
-                      "//*[@id='numberfield-1856-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_default",
-                "values":[
-                   [
-                      "0",
-                      "//*[@id='numberfield-1888-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Subject_Feesimple",
-                      "//*[@id='combobox-1896-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_default",
-                "values":[
-                   [
-                      "None",
-                      "//*[@id='textfield-1904-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "Comp6_street_address",
-                      "//*[@id='mbxautocompletefield-1209-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp6_city",
-                      "//*[@id='textfield-1217-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp6_zipcode",
-                      "//*[@id='mbxautozipfield-1237-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Sold3MLS",
-                      "//*[@id='mbxautocurrencyfield-1278-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Sold3Price",
-                      "//*[@id='mbxautocurrencyfield-1277-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "compactiveprice6",
-                      "//*[@id='mbxautocurrencyfield-1286-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_default",
-                "values":[
-                   [
-                      "MLS",
-                      "//*[@id='combobox-1262-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"date_fill_javascript",
-                "values":[
-                   [
-                      "Comp6_Active_Date",
-                      "//*[@id='datefield-1302-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Subject_property_type",
-                      "//*[@id='combobox-1334-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Sol3Style",
-                      "//*[@id='combobox-1366-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Sol3Story_eval",
-                      "//*[@id='numberfield-1374-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Sol3Story_eval",
-                      "//*[@id='numberfield-1382-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "Sold3Yrbuilt",
-                      "//*[@id='numberfield-1390-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Sold3sqft",
-                      "//*[@id='numberfield-1408-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Sold3Gla",
-                      "//*[@id='numberfield-1435-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Comp6_basement",
-                      "//*[@id='combobox-1451-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "SubUnits",
-                      "//*[@id='numberfield-1528-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp6_total_rooms",
-                      "//*[@id='numberfield-1536-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Sold3Bed",
-                      "//*[@id='numberfield-1554-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Sold3Bath",
-                      "//*[@id='numberfield-1556-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Sold3_Prop_Cond",
-                      "//*[@id='combobox-1729-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp6_viewtype",
-                      "//*[@id='combobox-1745-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp6_viewtype",
-                      "//*[@id='combobox-1769-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp6_viewtype",
-                      "//*[@id='combobox-1785-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_default",
-                "values":[
-                   [
-                      "Conventional",
-                      "//*[@id='combobox-1801-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Sold3Gar",
-                      "//*[@id='numberfield-1857-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_default",
-                "values":[
-                   [
-                      "0",
-                      "//*[@id='numberfield-1889-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Subject_Feesimple",
-                      "//*[@id='combobox-1897-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_default",
-                "values":[
-                   [
-                      "None",
-                      "//*[@id='textfield-1905-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "Comp1_street_address",
-                      "//*[@id='mbxautocompletefield-1210-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp1_city",
-                      "//*[@id='textfield-1218-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp1_zipcode",
-                      "//*[@id='mbxautozipfield-1241-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Act1MLS",
-                      "//*[@id='mbxautocompletefield-1255-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "compactiveprice1",
-                      "//*[@id='mbxautocurrencyfield-1287-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_default",
-                "values":[
-                   [
-                      "MLS",
-                      "//*[@id='combobox-1263-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"date_fill_javascript",
-                "values":[
-                   [
-                      "Comp1_Active_Date",
-                      "//*[@id='datefield-1303-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Subject_property_type",
-                      "//*[@id='combobox-1335-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Active1Style",
-                      "//*[@id='combobox-1367-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Active1Story_eval",
-                      "//*[@id='numberfield-1375-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Active1Story_eval",
-                      "//*[@id='numberfield-1383-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "Act1Yrbuilt",
-                      "//*[@id='numberfield-1391-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Act1sqft",
-                      "//*[@id='numberfield-1412-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Act1Gla",
-                      "//*[@id='numberfield-1436-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Comp1_basement",
-                      "//*[@id='combobox-1452-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "SubUnits",
-                      "//*[@id='numberfield-1529-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp1_total_rooms",
-                      "//*[@id='numberfield-1537-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Act1Bed",
-                      "//*[@id='numberfield-1558-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Act1Bath",
-                      "//*[@id='numberfield-1560-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Act1_Prop_Cond_eva",
-                      "//*[@id='combobox-1729-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp1_view",
-                      "//*[@id='combobox-1746-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp1_view",
-                      "//*[@id='combobox-1770-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp1_view",
-                      "//*[@id='combobox-1786-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_default",
-                "values":[
-                   [
-                      "Conventional",
-                      "//*[@id='combobox-1802-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Act1Gar",
-                      "//*[@id='numberfield-1858-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_default",
-                "values":[
-                   [
-                      "0",
-                      "//*[@id='numberfield-1890-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Subject_Feesimple",
-                      "//*[@id='combobox-1898-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_default",
-                "values":[
-                   [
-                      "None",
-                      "//*[@id='textfield-1906-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "Comp2_street_address",
-                      "//*[@id='mbxautocompletefield-1211-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp2_city",
-                      "//*[@id='textfield-1219-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp2_zipcode",
-                      "//*[@id='mbxautozipfield-1245-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Act2MLS",
-                      "//*[@id='mbxautocompletefield-1256-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "compactiveprice2",
-                      "//*[@id='mbxautocurrencyfield-1288-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_default",
-                "values":[
-                   [
-                      "MLS",
-                      "//*[@id='combobox-1264-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"date_fill_javascript",
-                "values":[
-                   [
-                      "Comp2_Active_Date",
-                      "//*[@id='datefield-1304-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Subject_property_type",
-                      "//*[@id='combobox-1336-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Active2Style",
-                      "//*[@id='combobox-1368-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Active2Story_eval",
-                      "//*[@id='numberfield-1376-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Active2Story_eval",
-                      "//*[@id='numberfield-1384-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "Act2Yrbuilt",
-                      "//*[@id='numberfield-1392-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Act2sqft",
-                      "//*[@id='numberfield-1416-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Act2Gla",
-                      "//*[@id='numberfield-1437-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Comp2_basement",
-                      "//*[@id='combobox-1453-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "SubUnits",
-                      "//*[@id='numberfield-1530-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp2_total_rooms",
-                      "//*[@id='numberfield-1538-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Act2Bed",
-                      "//*[@id='numberfield-1562-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Act2Bath",
-                      "//*[@id='numberfield-1564-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Act2_Prop_Cond_eva",
-                      "//*[@id='combobox-1731-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp2_view",
-                      "//*[@id='combobox-1747-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp2_view",
-                      "//*[@id='combobox-1771-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp2_view",
-                      "//*[@id='combobox-1787-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_default",
-                "values":[
-                   [
-                      "Conventional",
-                      "//*[@id='combobox-1803-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Act2Gar",
-                      "//*[@id='numberfield-1859-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_default",
-                "values":[
-                   [
-                      "0",
-                      "//*[@id='numberfield-1891-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Subject_Feesimple",
-                      "//*[@id='combobox-1899-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_default",
-                "values":[
-                   [
-                      "None",
-                      "//*[@id='textfield-1907-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "Comp3_street_address",
-                      "//*[@id='mbxautocompletefield-1212-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp3_city",
-                      "//*[@id='textfield-1220-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp3_zipcode",
-                      "//*[@id='mbxautozipfield-1249-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Act3MLS",
-                      "//*[@id='mbxautocompletefield-1257-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "compactiveprice3",
-                      "//*[@id='mbxautocurrencyfield-1289-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_default",
-                "values":[
-                   [
-                      "MLS",
-                      "//*[@id='combobox-1265-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"date_fill_javascript",
-                "values":[
-                   [
-                      "Comp3_Active_Date",
-                      "//*[@id='datefield-1305-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Subject_property_type",
-                      "//*[@id='combobox-1337-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Active3Style",
-                      "//*[@id='combobox-1369-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Active3Story_eval",
-                      "//*[@id='numberfield-1377-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Active3Story_eval",
-                      "//*[@id='numberfield-1385-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "Act3Yrbuilt",
-                      "//*[@id='numberfield-1393-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Act3sqft",
-                      "//*[@id='numberfield-1420-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Act3Gla",
-                      "//*[@id='numberfield-1438-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Comp3_basement",
-                      "//*[@id='combobox-1454-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "SubUnits",
-                      "//*[@id='numberfield-1531-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp3_total_rooms",
-                      "//*[@id='numberfield-1539-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Act3Bed",
-                      "//*[@id='numberfield-1566-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Act3Bath",
-                      "//*[@id='numberfield-1568-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Act3_Prop_Cond_eva",
-                      "//*[@id='combobox-1732-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp3_view",
-                      "//*[@id='combobox-1748-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp3_view",
-                      "//*[@id='combobox-1771-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "Comp3_view",
-                      "//*[@id='combobox-1787-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_default",
-                "values":[
-                   [
-                      "Conventional",
-                      "//*[@id='combobox-1804-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Act3Gar",
-                      "//*[@id='numberfield-1860-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_default",
-                "values":[
-                   [
-                      "0",
-                      "//*[@id='numberfield-1892-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_data",
-                "values":[
-                   [
-                      "Subject_Feesimple",
-                      "//*[@id='combobox-1900-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"select_default",
-                "values":[
-                   [
-                      "None",
-                      "//*[@id='textfield-1908-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             },
-             {
-                "filedtype":"Textbox",
-                "values":[
-                   [
-                      "compremarks4",
-                      "//*[@id='mbxlimitedtextarea-1991-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "compremarks5",
-                      "//*[@id='mbxlimitedtextarea-1992-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "compremarks6",
-                      "//*[@id='mbxlimitedtextarea-1993-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "compremarks1",
-                      "//*[@id='mbxlimitedtextarea-1996-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "compremarks2",
-                      "//*[@id='mbxlimitedtextarea-1997-inputEl']",
-                      "xpath"
-                   ],
-                   [
-                      "compremarks3",
-                      "//*[@id='mbxlimitedtextarea-1998-inputEl']",
-                      "xpath"
-                   ]
-                ]
-             }
-          ]
+         "Comparable": [
+            {
+                "filedtype": "Textbox",
+                "values": [
+                    [
+                        "SubMLS",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[9]/td[2]/div/div/div/div/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_default",
+                "values": [
+                    [
+                        "County Tax",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[10]/td[2]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "SubjectSaleType",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[14]/td[2]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "date_fill_javascript",
+                "values": [
+                    [
+                        "SubListDate_active",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[15]/td[2]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Subject_property_type",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[19]/td[2]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Substyle",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[23]/td[2]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "Textbox",
+                "values": [
+                    [
+                        "Substories",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[24]/td[2]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Substories",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[25]/td[2]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "SubYBu",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[26]/td[2]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "SubLotsq",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[27]/td[2]/div/div/div/div[1]/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "SubYBu",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[29]/td[2]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "SubBase",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[31]/td[2]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "Textbox",
+                "values": [
+                    [
+                        "SubUnits",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[38]/td[2]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Subject_total_rooms",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[39]/td[2]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "SubBed",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[40]/td[2]/div/div/div/div[1]/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "SubFBath",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[40]/td[2]/div/div/div/div[3]/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "SubView",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[52]/td[2]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "SubView",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[57]/td[2]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "Textbox",
+                "values": [
+                    [
+                        "Rent",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[62]/td[2]/div/div/div/div/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Subject_garage",
+                        "//*[@id='GarCarType_Subject']",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "Textbox",
+                "values": [
+                    [
+                        "SubCarporttype",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[69]/td[2]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "Textbox_default",
+                "values": [
+                    [
+                        "0",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[70]/td[2]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_default",
+                "values": [
+                    [
+                        "Fee Simple",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[71]/td[2]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "None",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[72]/td[2]/div/div/div/div/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "Textbox",
+                "values": [
+                    [
+                        "SubDiv",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[78]/td[2]/div/div/div/div/input",
+                        "xpath"
+                    ],
+                    [
+                        "SubDiv",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[79]/td[2]/div/div/div/div/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "Textbox",
+                "values": [
+                    [
+                        "Comp4_street_address",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[6]/td[3]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp4_city",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[7]/td[3]/div/div/div/div/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp4_zipcode",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[8]/td[3]/div/div/div/div[3]/div/div/div/input",
+                        "xpath"
+                    ],
+                    [
+                        "Sold1MLS",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[9]/td[3]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Sold1Price",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[12]/td[3]/div/div/div/div/input",
+                        "xpath"
+                    ],
+                    [
+                        "compactiveprice4",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[13]/td[3]/div/div/div/div/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_default",
+                "values": [
+                    [
+                        "MLS",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[10]/td[3]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "SubjectSaleType",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[14]/td[3]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "date_fill_javascript",
+                "values": [
+                    [
+                        "Comp4_Active_Date",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[15]/td[3]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Subject_property_type",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[19]/td[3]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Sol1Style",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[23]/td[3]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Sol1Story_eval",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[24]/td[3]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Sol1Story_eval",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[25]/td[3]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "Textbox",
+                "values": [
+                    [
+                        "Sold1Yrbuilt",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[26]/td[3]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Sold1sqft",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[27]/td[3]/div/div/div/div[1]/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Sold1Gla",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[29]/td[3]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Comp4_basement",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[31]/td[3]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "Textbox",
+                "values": [
+                    [
+                        "SubUnits",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[38]/td[3]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp4_total_rooms",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[39]/td[3]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Sold1Bed",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[40]/td[3]/div/div/div/div[1]/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Sold1Bath",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[40]/td[3]/div/div/div/div[3]/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Sold1_Prop_Cond",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[50]/td[3]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp4_viewtype",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[52]/td[3]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp4_viewtype",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[55]/td[3]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp4_viewtype",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[57]/td[3]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_default",
+                "values": [
+                    [
+                        "Conventional",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[59]/td[3]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Sold1Gar",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[66]/td[3]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_default",
+                "values": [
+                    [
+                        "0",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[70]/td[3]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Subject_Feesimple",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[71]/td[3]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_default",
+                "values": [
+                    [
+                        "None",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[72]/td[3]/div/div/div/div/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "Textbox",
+                "values": [
+                    [
+                        "Comp5_street_address",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[6]/td[4]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp5_city",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[7]/td[4]/div/div/div/div/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp5_zipcode",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[8]/td[4]/div/div/div/div[3]/div/div/div/input",
+                        "xpath"
+                    ],
+                    [
+                        "Sold2MLS",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[9]/td[4]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Sold2Price",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[12]/td[4]/div/div/div/div/input",
+                        "xpath"
+                    ],
+                    [
+                        "compactiveprice5",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[13]/td[4]/div/div/div/div/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_default",
+                "values": [
+                    [
+                        "MLS",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[10]/td[4]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "date_fill_javascript",
+                "values": [
+                    [
+                        "Comp5_Active_Date",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[15]/td[4]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Subject_property_type",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[19]/td[4]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Sol2Style",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[23]/td[4]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Sol2Story_eval",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[24]/td[4]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Sol2Story_eval",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[25]/td[4]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "Textbox",
+                "values": [
+                    [
+                        "Sold2Yrbuilt",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[26]/td[4]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Sold2sqft",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[27]/td[4]/div/div/div/div[1]/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Sold2Gla",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[29]/td[4]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Comp5_basement",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[31]/td[4]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "Textbox",
+                "values": [
+                    [
+                        "SubUnits",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[38]/td[4]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp5_total_rooms",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[39]/td[4]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Sold2Bed",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[40]/td[4]/div/div/div/div[1]/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Sold2Bath",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[40]/td[4]/div/div/div/div[3]/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Sold2_Prop_Cond",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[50]/td[4]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp5_viewtype",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[52]/td[4]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp5_viewtype",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[55]/td[4]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp5_viewtype",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[57]/td[4]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_default",
+                "values": [
+                    [
+                        "Conventional",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[59]/td[4]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Sold2Gar",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[66]/td[4]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_default",
+                "values": [
+                    [
+                        "0",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[70]/td[4]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Subject_Feesimple",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[71]/td[4]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_default",
+                "values": [
+                    [
+                        "None",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[72]/td[4]/div/div/div/div/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "Textbox",
+                "values": [
+                    [
+                        "Comp6_street_address",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[6]/td[5]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp6_city",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[7]/td[5]/div/div/div/div/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp6_zipcode",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[8]/td[5]/div/div/div/div[3]/div/div/div/input",
+                        "xpath"
+                    ],
+                    [
+                        "Sold3MLS",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[12]/td[5]/div/div/div/div/input",
+                        "xpath"
+                    ],
+                    [
+                        "Sold3Price",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[12]/td[4]/div/div/div/div/input",
+                        "xpath"
+                    ],
+                    [
+                        "compactiveprice6",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[13]/td[5]/div/div/div/div/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_default",
+                "values": [
+                    [
+                        "MLS",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[10]/td[5]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "date_fill_javascript",
+                "values": [
+                    [
+                        "Comp6_Active_Date",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[15]/td[5]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Subject_property_type",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[19]/td[5]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Sol3Style",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[23]/td[5]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Sol3Story_eval",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[24]/td[5]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Sol3Story_eval",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[25]/td[5]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "Textbox",
+                "values": [
+                    [
+                        "Sold3Yrbuilt",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[26]/td[5]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Sold3sqft",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[27]/td[5]/div/div/div/div[1]/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Sold3Gla",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[29]/td[5]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Comp6_basement",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[31]/td[5]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "Textbox",
+                "values": [
+                    [
+                        "SubUnits",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[38]/td[5]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp6_total_rooms",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[39]/td[5]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Sold3Bed",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[40]/td[5]/div/div/div/div[1]/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Sold3Bath",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[40]/td[5]/div/div/div/div[3]/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Sold3_Prop_Cond",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[50]/td[5]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp6_viewtype",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[52]/td[5]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp6_viewtype",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[55]/td[5]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp6_viewtype",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[57]/td[5]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_default",
+                "values": [
+                    [
+                        "Conventional",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[59]/td[5]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Sold3Gar",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[66]/td[5]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_default",
+                "values": [
+                    [
+                        "0",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[70]/td[5]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Subject_Feesimple",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[71]/td[5]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_default",
+                "values": [
+                    [
+                        "None",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[72]/td[5]/div/div/div/div/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "Textbox",
+                "values": [
+                    [
+                        "Comp1_street_address",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[6]/td[6]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp1_city",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[7]/td[6]/div/div/div/div/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp1_zipcode",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[8]/td[6]/div/div/div/div[3]/div/div/div/input",
+                        "xpath"
+                    ],
+                    [
+                        "Act1MLS",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[9]/td[6]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "compactiveprice1",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[13]/td[6]/div/div/div/div/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_default",
+                "values": [
+                    [
+                        "MLS",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[10]/td[6]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "date_fill_javascript",
+                "values": [
+                    [
+                        "Comp1_Active_Date",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[15]/td[6]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Subject_property_type",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[19]/td[6]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Active1Style",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[23]/td[6]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Active1Story_eval",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[24]/td[6]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Active1Story_eval",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[25]/td[6]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "Textbox",
+                "values": [
+                    [
+                        "Act1Yrbuilt",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[26]/td[6]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Act1sqft",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[27]/td[6]/div/div/div/div[1]/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Act1Gla",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[29]/td[6]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Comp1_basement",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[31]/td[6]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "Textbox",
+                "values": [
+                    [
+                        "SubUnits",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[38]/td[6]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp1_total_rooms",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[39]/td[6]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Act1Bed",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[40]/td[6]/div/div/div/div[1]/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Act1Bath",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[40]/td[6]/div/div/div/div[3]/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Act1_Prop_Cond_eva",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[50]/td[5]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp1_view",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[52]/td[6]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp1_view",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[55]/td[6]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp1_view",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[57]/td[6]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_default",
+                "values": [
+                    [
+                        "Conventional",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[59]/td[6]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Act1Gar",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[66]/td[6]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_default",
+                "values": [
+                    [
+                        "0",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[70]/td[6]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Subject_Feesimple",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[71]/td[6]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_default",
+                "values": [
+                    [
+                        "None",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[72]/td[6]/div/div/div/div/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "Textbox",
+                "values": [
+                    [
+                        "Comp2_street_address",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[6]/td[7]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp2_city",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[7]/td[7]/div/div/div/div/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp2_zipcode",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[8]/td[7]/div/div/div/div[3]/div/div/div/input",
+                        "xpath"
+                    ],
+                    [
+                        "Act2MLS",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[9]/td[7]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "compactiveprice2",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[13]/td[7]/div/div/div/div/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_default",
+                "values": [
+                    [
+                        "MLS",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[10]/td[7]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "date_fill_javascript",
+                "values": [
+                    [
+                        "Comp2_Active_Date",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[15]/td[7]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Subject_property_type",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[19]/td[7]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Active2Style",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[23]/td[7]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Active2Story_eval",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[24]/td[7]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Active2Story_eval",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[25]/td[7]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "Textbox",
+                "values": [
+                    [
+                        "Act2Yrbuilt",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[26]/td[7]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Act2sqft",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[27]/td[7]/div/div/div/div[1]/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Act2Gla",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[29]/td[7]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Comp2_basement",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[31]/td[7]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "Textbox",
+                "values": [
+                    [
+                        "SubUnits",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[38]/td[7]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp2_total_rooms",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[39]/td[7]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Act2Bed",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[40]/td[7]/div/div/div/div[1]/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Act2Bath",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[40]/td[7]/div/div/div/div[3]/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Act2_Prop_Cond_eva",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[50]/td[7]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp2_view",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[52]/td[7]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp2_view",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[55]/td[7]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp2_view",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[57]/td[7]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_default",
+                "values": [
+                    [
+                        "Conventional",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[59]/td[7]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Act2Gar",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[66]/td[7]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_default",
+                "values": [
+                    [
+                        "0",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[70]/td[7]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Subject_Feesimple",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[71]/td[7]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_default",
+                "values": [
+                    [
+                        "None",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[72]/td[7]/div/div/div/div/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "Textbox",
+                "values": [
+                    [
+                        "Comp3_street_address",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[6]/td[8]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp3_city",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[7]/td[8]/div/div/div/div/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp3_zipcode",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[8]/td[8]/div/div/div/div[3]/div/div/div/input",
+                        "xpath"
+                    ],
+                    [
+                        "Act3MLS",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[9]/td[8]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "compactiveprice3",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[13]/td[8]/div/div/div/div/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_default",
+                "values": [
+                    [
+                        "MLS",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[10]/td[8]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "date_fill_javascript",
+                "values": [
+                    [
+                        "Comp3_Active_Date",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[15]/td[8]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Subject_property_type",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[19]/td[8]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Active3Style",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[23]/td[8]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Active3Story_eval",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[24]/td[8]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Active3Story_eval",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[25]/td[8]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "Textbox",
+                "values": [
+                    [
+                        "Act3Yrbuilt",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[26]/td[8]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Act3sqft",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[27]/td[8]/div/div/div/div[1]/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Act3Gla",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[29]/td[8]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Comp3_basement",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[31]/td[8]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "Textbox",
+                "values": [
+                    [
+                        "SubUnits",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[38]/td[8]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp3_total_rooms",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[39]/td[8]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Act3Bed",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[40]/td[8]/div/div/div/div[1]/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Act3Bath",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[40]/td[8]/div/div/div/div[3]/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Act3_Prop_Cond_eva",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[50]/td[8]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp3_view",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[52]/td[8]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp3_view",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[55]/td[7]/div/div/div/div[1]/input",
+                        "xpath"
+                    ],
+                    [
+                        "Comp3_view",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[57]/td[7]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_default",
+                "values": [
+                    [
+                        "Conventional",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[59]/td[8]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Act3Gar",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[66]/td[8]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_default",
+                "values": [
+                    [
+                        "0",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[70]/td[8]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_data",
+                "values": [
+                    [
+                        "Subject_Feesimple",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[71]/td[8]/div/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_default",
+                "values": [
+                    [
+                        "None",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[72]/td[8]/div/div/div/div/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "Textbox",
+                "values": [
+                    [
+                        "compremarks4",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[2]/td/div/div/div/div[1]/div/div/div[2]/div/div[1]/div/textarea",
+                        "xpath"
+                    ],
+                    [
+                        "compremarks5",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[2]/td/div/div/div/div[1]/div/div/div[3]/div/div[1]/div/textarea",
+                        "xpath"
+                    ],
+                    [
+                        "compremarks6",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[2]/td/div/div/div/div[1]/div/div/div[4]/div/div[1]/div/textarea",
+                        "xpath"
+                    ],
+                    [
+                        "compremarks1",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[2]/td/div/div/div/div[2]/div/div/div[2]/div/div[1]/div/textarea",
+                        "xpath"
+                    ],
+                    [
+                        "compremarks2",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[2]/td/div/div/div/div[2]/div/div/div[3]/div/div[1]/div/textarea",
+                        "xpath"
+                    ],
+                    [
+                        "compremarks3",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[2]/td/div/div/div/div[2]/div/div/div[4]/div/div[1]/div/textarea",
+                        "xpath"
+                    ]
+                ]
+            }
+        ]
        }
     ]
  }
