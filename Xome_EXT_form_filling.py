@@ -144,7 +144,7 @@ class Formnewbpoext:
                                 radio_btn_click(driver,field[0], field[1], field[2])
                                 logging.info(f"Logged: radio_btn_click( {field[0]}, {field[1]}, {field[2]})")
                             
-                            elif filedtype == "date_fill_javascript":
+                            elif filedtype == "date_fill_javascript1":
                                 javascript_excecuter_datefilling( driver,merged_json[field[0]], field[1], field[2])
                                 logging.info(f"Logged: javascript_excecuter_datefilling( driver,merged_json[{field[0]}], {field[1]}, {field[2]}")
                             elif filedtype =="save_data":

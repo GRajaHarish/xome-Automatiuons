@@ -272,7 +272,7 @@
                ]
            },
            {
-               "filedtype": "Textbox",
+               "filedtype": "select_data",
                "values": [
                    [
                        "Typical_Marketing_Time",
@@ -344,7 +344,7 @@
        ]
       },
        {
-          "MarketPrice":[
+          "Price":[
              {
                 "filedtype":"Textbox",
                 "values":[
@@ -356,7 +356,7 @@
                 ]
              },
              {
-               "filedtype":"Textbox",
+               "filedtype":"Textbox2",
                "values":[
                   [
                      "Repaired90Day",
@@ -376,7 +376,7 @@
                 ]
              },
              {
-               "filedtype":"Textbox",
+               "filedtype":"Textbox1",
                "values":[
                   [
                      "Repaired120Day",
@@ -396,7 +396,7 @@
                 ]
              },
              {
-               "filedtype":"Textbox",
+               "filedtype":"Textbox1",
                "values":[
                   [
                      "Date_of_Inspection",
@@ -406,7 +406,7 @@
                ]
             },
             {
-               "filedtype":"Textbox",
+               "filedtype":"select_data",
                "values":[
                   [
                      "Estimated_Marketing_Time",
@@ -419,7 +419,7 @@
                "filedtype":"Textbox_default",
                "values":[
                   [
-                     "Summary_cmd",
+                     "Comments",
                      "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[6]/div[2]/div/div/div/div[2]/div/div/div/div/div[3]/div/div[1]/div/textarea",
                      "xpath"
                   ]
