@@ -24,10 +24,17 @@ def adj_click(driver,data,element_identifier,element_type):
 def radio_btn_click(driver,btn_value,element_identifier,element_type):#This function is for clicking radio button
     selector_map=selector_mapping(element_type)
     element=driver.find_elements(selector_map,element_identifier)
-    for x in element:
-        if x.get_attribute("value")==btn_value:
-            x.click()
-
+    try:
+        next_label_xpath = element_identifier + "/following::label[1]"
+        next_label = driver.find_element(By.XPATH, next_label_xpath)
+            
+            # Get the text of the next label
+        next_label_text = next_label.text
+        for x in element:
+            if next_label_text.strip() == btn_value:
+                    x.click()
+    except Exception as e:   
+            print("no data",e)
 def data_filling_text(driver,data,elementlocator,selector):
     selector_map=selector_mapping(selector)
     element=find_elem(driver,selector_map,elementlocator)

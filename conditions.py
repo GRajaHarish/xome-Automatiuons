@@ -9,7 +9,7 @@ import json
 
 
 def condition_data(merged_data,subclient):
-          merged_data['isProperty_Currently_yes']= 'yes'
+          # merged_data['isProperty_Currently_yes']= 'yes'
           if merged_data['SubPropCond'] not in ["Fair","Poor"]:
                if "Multi Family" in merged_data['Subtype']:
                     subject_property_condition="Tenant"
@@ -252,7 +252,8 @@ def condition_data(merged_data,subclient):
                merged_data['SubListComp_sold']=''
                merged_data['OwnerName_sold']='' 
                merged_data['Listingcompany_sold']='' 
-               merged_data['isProperty_Currently_yes']= 'yes'
+               merged_data['isProperty_Currently_yes']= 'Yes'
+               merged_data['isProperty_Currently_no']=''
               
 
                if "Active" in merged_data['SubStatus'] or "Pending" in merged_data['SubStatus']:
@@ -323,7 +324,8 @@ def condition_data(merged_data,subclient):
                merged_data['SubListComp_sold']=''
                merged_data['OwnerName_sold']='' 
                merged_data['Listingcompany_sold']='' 
-               merged_data['isProperty_Currently_no']='no'
+               merged_data['isProperty_Currently_no']='No'
+               merged_data['isProperty_Currently_yes']=''
                merged_data['Analysis_Comments']='No recent sales/listing history available'
 
           #Hoa

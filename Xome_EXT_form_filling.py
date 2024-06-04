@@ -21,7 +21,7 @@ class Formnewbpoext:
     def form(self,merged_json,order_id,data):   
         # from#statuschange import#statuschange
         #merged_json=condition_data(merged_json)
-        file_path = r'E:/PROJRCT XOME/Cbpo Ext(u)_1/Subject.html'
+        file_path = r'C:\Cbpo Ext(u)\Subject.html'
         chrome_options = Options()
         chrome_options.add_argument("--start-fullscreen") 
         driver = webdriver.Chrome(options=chrome_options)
@@ -278,7 +278,7 @@ class Formnewbpoext:
             print("Not Completed")
 
 def openchrome():
-    file_path = r'E:/PROJRCT%20XOME/Cbpo%20Ext(u)_1/Comparables.html'
+    file_path = r'C:\Cbpo Ext(u)\comparables.html'
     chrome_options = Options()
     chrome_options.add_argument("--start-fullscreen") 
     driver = webdriver.Chrome(options=chrome_options)
@@ -286,7 +286,7 @@ def openchrome():
     driver.get(file_url)
     return driver
 def openchrome2():
-    file_path = r'E:/PROJRCT%20XOME/Cbpo%20Ext(u)_1/Neighborhood.html'
+    file_path = r'C:\Cbpo Ext(u)\neighborhood.html'
     chrome_options = Options()
     chrome_options.add_argument("--start-fullscreen") 
     driver = webdriver.Chrome(options=chrome_options)
@@ -295,7 +295,7 @@ def openchrome2():
     return driver
 
 def openchrome3():
-    file_path = r'E:/PROJRCT%20XOME/Cbpo%20Ext(u)_1/Marketprice.html'
+    file_path = r'C:\Cbpo Ext(u)\marketprice.html'
     chrome_options = Options()
     chrome_options.add_argument("--start-fullscreen") 
     driver = webdriver.Chrome(options=chrome_options)
