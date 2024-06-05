@@ -63,6 +63,16 @@
                ]
            },
            {
+            "filedtype": "Textbox",
+            "values": [
+                [
+                    "Subject_repair_Comments",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[1]/div/div/div/div/div[14]/div/div[1]/div/textarea",
+                    "xpath"
+                ]
+            ]
+           },
+           {
                "filedtype": "radiobutton_data",
                "values": [
                    [
@@ -268,7 +278,22 @@
                        "neighlow",
                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[1]/div/div/div/div/fieldset/div/div/div/div[2]/div/div/div/input",
                        "xpath"
+                   ],
+                   [
+                       "Subject_neighborhood_Comments",
+                       "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[2]/div/div/div/div/div[2]/div/div[1]/div/textarea",
+                       "xpath"
                    ]
+               ]
+           },
+           {
+                "filedtype": "Textbox_default",
+                "values": [
+                    [
+                        "GLA",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[2]/div/div/div/div/div[3]/div/div[1]/div/textarea",
+                        "xpath"
+                    ]
                ]
            },
            {
@@ -1084,7 +1109,7 @@
                     ],
                     [
                         "Sold3MLS",
-                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[12]/td[5]/div/div/div/div/input",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[1]/td/div/div/div/table/tbody/tr[9]/td[5]/div/div/div/div[1]/input",
                         "xpath"
                     ],
                     [

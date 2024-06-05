@@ -269,6 +269,7 @@ class Formnewbpoext:
                             elif filedtype =="save_data":
                                 pass  
            #statuschange(order_id,"26","3","14")
+            keyword = input("enter a character or press enter to continue")
             print("pls wait")
         except Exception as e:
             traceback.print_exc()
@@ -280,6 +281,7 @@ class Formnewbpoext:
 def openchrome():
     file_path = r'C:\Cbpo Ext(u)\comparables.html'
     chrome_options = Options()
+    chrome_options.add_experimental_option("detach", True)
     chrome_options.add_argument("--start-fullscreen") 
     driver = webdriver.Chrome(options=chrome_options)
     file_url = 'file:///' + file_path.replace('\\', '/')
@@ -288,6 +290,7 @@ def openchrome():
 def openchrome2():
     file_path = r'C:\Cbpo Ext(u)\neighborhood.html'
     chrome_options = Options()
+    chrome_options.add_experimental_option("detach", True)
     chrome_options.add_argument("--start-fullscreen") 
     driver = webdriver.Chrome(options=chrome_options)
     file_url = 'file:///' + file_path.replace('\\', '/')
@@ -297,6 +300,7 @@ def openchrome2():
 def openchrome3():
     file_path = r'C:\Cbpo Ext(u)\marketprice.html'
     chrome_options = Options()
+    chrome_options.add_experimental_option("detach", True)
     chrome_options.add_argument("--start-fullscreen") 
     driver = webdriver.Chrome(options=chrome_options)
     file_url = 'file:///' + file_path.replace('\\', '/')
