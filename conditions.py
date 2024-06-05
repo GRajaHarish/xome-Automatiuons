@@ -252,11 +252,14 @@ def condition_data(merged_data,subclient):
                merged_data['SubListComp_sold']=''
                merged_data['OwnerName_sold']='' 
                merged_data['Listingcompany_sold']='' 
+               merged_data['past12Months_no']="No"
                merged_data['isProperty_Currently_yes']= 'Yes'
                merged_data['isProperty_Currently_no']=''
               
 
                if "Active" in merged_data['SubStatus'] or "Pending" in merged_data['SubStatus']:
+                    merged_data['past12Months_yes']="Yes"
+                    merged_data['past12Months_no']=""
                     merged_data['SubList_active']="Yes"
                     merged_data['Analysis_Comments']="The subject is currently active on Market."
                     if merged_data['SubListPrice']=='':
