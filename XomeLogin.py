@@ -40,9 +40,9 @@ def ClientLogin(order_details):
          flag=0
     if flag == 1:     
           if ClientDetails[2] == "Active" and flag == 1:
-               cookies,driver=loginginto_Portal(ClientDetails)
+               driver=loginginto_Portal(ClientDetails)
                t1.join()
-               findorderTYPE(driver,address,cookies)
+               
                results = []
                while not result_queue.empty():
                          results.append(result_queue.get())
@@ -63,7 +63,7 @@ def ClientLogin(order_details):
                     #print("QC ",QC)
                if QC=="0" or QC=="null" or QC=="" or QC is None:
                          # findorderTYPE(driver,address,merged_json,order_details)\
-                         findorderTYPE(driver,address,cookies)
+                         findorderTYPE(driver,address,order_details,merged_json)
           else:
                print('Bad Password')
                logging.info('Bad Password')
@@ -101,11 +101,12 @@ def loginginto_Portal(ClientDetails):
             EC.presence_of_element_located((By.ID, "inProgressOrdersTab"))
             )
             cookies = driver.get_cookies()
-            return cookies,driver
+            print("login succesfully")
+            return driver
        except Exception as e:
             print(f"An error occurred: {e}")
        finally:
-            print("")
+            print("user login completed")
              
 
 

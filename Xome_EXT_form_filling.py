@@ -18,15 +18,15 @@ from bs4 import BeautifulSoup
 
 class Formnewbpoext:
             #  merged json = conditions completed data
-    def form(self,merged_json,order_id,data):   
+    def form(merged_json, driver, order_id, data):   
         # from#statuschange import#statuschange
         #merged_json=condition_data(merged_json)
-        file_path = r'C:\Cbpo Ext(u)\Subject.html'
-        chrome_options = Options()
-        chrome_options.add_argument("--start-fullscreen") 
-        driver = webdriver.Chrome(options=chrome_options)
-        file_url = 'file:///' + file_path.replace('\\', '/')
-        driver.get(file_url)
+        # file_path = r'C:\Cbpo Ext(u)\Subject.html'
+        # chrome_options = Options()
+        # chrome_options.add_argument("--start-fullscreen") 
+        # driver = webdriver.Chrome(options=chrome_options)
+        # file_url = 'file:///' + file_path.replace('\\', '/')
+        # driver.get(file_url)
         time.sleep(2)
         try:
             for page_data in data["page"]:
