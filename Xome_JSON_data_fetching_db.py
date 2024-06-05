@@ -10,7 +10,7 @@ import logging
 from queue import Queue
 from conditions import condition_data
 result_queue = Queue()
-def formdata_fetching_db(result_queue):
+def formdata_fetching_db(result_queue,order_details):
     tfsorder_id='1237432'
     tfs_orderid_rpad="SELECT * FROM subject where TFSOrderID like '"+tfsorder_id+"%'" 
     print("\nStarted Fetching order details form Rpad   [■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■] ")   
@@ -111,12 +111,7 @@ def formdata_fetching_db(result_queue):
                             result_queue.put(merged_json)
                             merged_json=condition_data(merged_json,'Green Realty')
                             print("Data is empty.[■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■]")
-                            with open('xome.json') as f:
-                                data = json.load(f)
-                            from Xome_EXT_form_filling import Formnewbpoext
-                            init = Formnewbpoext()
-                                # if session then send session
-                            init.form(merged_json,'1231313', data)
+                            
 
                 else:
                     print("The subject is in Not Completed status  [■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■]", sub_status)
@@ -144,4 +139,3 @@ def formdata_fetching_db(result_queue):
             merged_json=[]
             result_queue.put(merged_json)
             return
-formdata_fetching_db(result_queue)

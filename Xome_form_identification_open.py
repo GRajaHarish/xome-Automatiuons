@@ -6,7 +6,7 @@ from conditions import condition_data
 import time
 import logging
 
-def findorderTYPE(driver,address,order_details):
+def findorderTYPE(driver,address,order_details,merged_json):
     subclient = order_details['subclient']
     merged_json=condition_data(merged_json,subclient)
     global chromedriver
@@ -34,10 +34,10 @@ def findorderTYPE(driver,address,order_details):
     logging.info(json.dumps(data,indent=4))
     openOrderType(data,address,driver,merged_json,order_details)
 
-def openOrderType(data,address):
+def openOrderType(data,address,driver,merged_json,order_details):
     print(data,address)
     address=address.split()[0]
-    orderlist=["cBPO Ext (u)", "cBPO Ext (n)", "cBPO Ext (a)", "cEval Ext (b)", "cBPO Ext (x) AVR","Exterior PCR Only"]
+    orderlist=["cBPO Ext (u)", "cBPO Ext (n)", "cBPO Ext (a)","cBPO Ext (x) 72hr", "cEval Ext (b)", "cBPO Ext (x) AVR","Exterior PCR Only"]
     if address in data:
         info = data[address]
         if info:
@@ -52,12 +52,12 @@ def openOrderType(data,address):
                             # statuschange(order_details['order_id'], "25", "3", "14")
                         else:
                             print("Fresh Form Identified ................................................................................")
-                            with open('xome.json') as f:
+                            with open('connectors/cbpo x.json') as f:
                                 data = json.load(f)
                             from Xome_EXT_form_filling import Formnewbpoext
                             init = Formnewbpoext()
                             # if session then send session
-                            init.form(merged_json, driver, order_details['order_id'], data, order['ItemId'], order['OrderId'])
+                            init.form(merged_json, driver, order_details['order_id'], data)
                     else:
                         print(info[1])
                         print("Order type not found unable to do this order ")
@@ -71,7 +71,9 @@ def openOrderType(data,address):
 def openIdentifiedForm(xpath):
      print("Order type found")
      xpath.click()
-     viewFormBTN = chromedriver.find_element(By.ID, "button-1048-btnEl")
+     viewFormBTN = WebDriverWait(driver, 10).until(
+     EC.presence_of_element_located((By.XPATH, "//*[@id='button-1048-btnEl']"))
+     )
      viewFormBTN.click()
      print("Openingform")
      
