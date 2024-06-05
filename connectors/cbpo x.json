@@ -1,0 +1,437 @@
+{
+    "Subject_info": [
+        {
+            "filedtype": "radiobutton_data",
+            "values": [
+                [
+                    "yes",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[1]/div/div/div/div/fieldset/div/div/div/div[2]/div/div/table/tbody/tr/td[1]/div/div/div/span/input",
+                    "xpath"
+                ]
+            ]
+        },
+      
+      
+        {
+            "filedtype": "radiobutton_data",
+            "values": [
+                [
+                    "no",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[1]/div/div/div/div/fieldset/div/div/div/div[3]/div/div/table/tbody/tr/td[2]/div/div/div/span/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "radiobutton_data",
+            "values": [
+                [
+                    "yes",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div[1]/div/div/table/tbody/tr/td[1]/div/div/div/span/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "select_default",
+            "values": [
+                [
+                    "Yes",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div[2]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+       
+        {
+            "filedtype": "select_default",
+            "values": [
+                [
+                    "Owner",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div[3]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "select_data",
+            "values": [
+                [
+                    "Subtype",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div[4]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "select_data",
+            "values": [
+                [
+                    "Apn",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div[5]/div/div/div/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "Textboxbox",
+            "values": [
+                [
+                    "Subject_repair_Comments",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div[8]/div/div[1]/div/Textboxarea",
+                    "xpath"
+                ]
+            ]
+        },
+     
+        {
+            "filedtype": "select_default",
+            "values": [
+                [
+                    "Average",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[1]/div/div/div/div/div[2]/div/div/div/div/div[20]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "select_default",
+            "values": [
+                [
+                    "Average",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[1]/div/div/div/div/div[2]/div/div/div/div/div[20]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "Textboxbox_default",
+            "values": [
+                [
+                    "Average",
+                    "  /html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[1]/div/div/div/div/div[2]/div/div/div/div/div[21]/div/div[1]/div/Textboxarea",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "select_default",
+            "values": [
+                [
+                    "Average",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[1]/div/div/div/div/div[2]/div/div/div/div/div[22]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "Textboxbox_default",
+            "values": [
+                [
+                    "Average",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[1]/div/div/div/div/div[2]/div/div/div/div/div[23]/div/div[1]/div/Textboxarea",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "Textboxbox_default",
+            "values": [
+                [
+                    "Average",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[1]/div/div/div/div/div[2]/div/div/div/div/div[21]/div/div[1]/div/Textboxarea",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "Textboxbox",
+            "values": [
+                [
+                    "YearlyTax",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[1]/div/div/div/div/div[2]/div/div/div/div/div[26]/div/div/div/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "radio",
+            "values": [
+                [
+                    "isProperty_Currently_yes",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[2]/div/div/div/div/div[1]/div/div/div/div/div[1]/div/div/table/tbody/tr/td[1]/div/div/div/span/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "radio",
+            "values": [
+                [
+                    "isProperty_Currently_no",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[2]/div/div/div/div/div[1]/div/div/div/div/div[1]/div/div/table/tbody/tr/td[2]/div/div/div/span/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "Textbox",
+            "values": [
+                [
+                    "SubListComp",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[2]/div/div/div/div/div[1]/div/div/div/div/div[2]/div/div/div/input",
+                    "xpath"
+                ]
+            ]
+        },
+      
+        {
+            "filedtype": "Textbox",
+            "values": [
+                [
+                    "SubListDate",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[2]/div/div/div/div/div[1]/div/div/div/div/div[5]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "Textbox",
+            "values": [
+                [
+                    "SubListPrice",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[2]/div/div/div/div/div[1]/div/div/div/div/div[6]/div/div/div/input",
+                    "xpath"
+                ]
+            ]
+        },
+  
+        {
+            "filedtype": "Textbox",
+            "values": [
+                [
+                    "SubListDate:",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[2]/div/div/div/div/div[1]/div/div/div/div/div[8]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "Textbox",
+            "values": [
+                [
+                    "Initial List Price:",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[2]/div/div/div/div/div[1]/div/div/div/div/div[9]/div/div/div/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "select_data",
+            "values": [
+                [
+                    "SubList_active",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[2]/div/div/div/div/div[1]/div/div/div/div/div[10]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "radio",
+            "values": [
+                [
+                    "past12Months_yes",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[2]/div/div/div/div/div[2]/div/div/div/div/div[1]/div/div/table/tbody/tr/td[1]/div/div/div/span/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "radio",
+            "values": [
+                [
+                    "past12Months_no",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div/div/div[2]/div/div/div/div/div[2]/div/div/div/div/div[1]/div/div/table/tbody/tr/td[2]/div/div/div/span/input",
+                    "xpath"
+                ]
+            ]
+        }
+    ],
+    "Price":[
+            {
+                "filedtype": "text",
+                "values": [
+                    [
+                        "AsIs90Day",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[7]/div[2]/div/div/div/div[1]/div/div/div/div/div[6]/div/div/table/tbody/tr[2]/td[2]/div/div/div/div/input",
+                        "xpath"
+                    ]
+                ]
+            },
+           
+            {
+                "filedtype": "text",
+                "values": [
+                    [
+                        "AsIs90Day_2",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[7]/div[2]/div/div/div/div[1]/div/div/div/div/div[6]/div/div/table/tbody/tr[3]/td[2]/div/div/div/div/input",
+                        "xpath"
+                    ]
+                ]
+            },
+         
+            {
+                "filedtype": "text",
+                "values": [
+                    [
+                        "30daysQale",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[7]/div[2]/div/div/div/div[1]/div/div/div/div/div[8]/div/div/div/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "text",
+                "values": [
+                    [
+                        "Subject Land Price:",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[7]/div[2]/div/div/div/div[1]/div/div/div/div/div[14]/div/div/div/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_default",
+                "values": [
+                    [
+                        "90",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[7]/div[2]/div/div/div/div[1]/div/div/div/div/div[15]/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "text",
+                "values": [
+                    [
+                        "Rent",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[7]/div[2]/div/div/div/div[1]/div/div/div/div/div[16]/div/div/div/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "text1",
+                "values": [
+                    [
+                        "Gross Rent Multiplier:",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[7]/div[2]/div/div/div/div[1]/div/div/div/div/div[18]/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "Textbox_default",
+                "values": [
+                    [
+                        "Stable",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[7]/div[2]/div/div/div/fieldset/div/div/div/div[2]/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "text",
+                "values": [
+                    [
+                        "sale_neighlow",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[7]/div[2]/div/div/div/fieldset/div/div/div/fieldset/div/div/div/div[1]/div/div/div/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "text",
+                "values": [
+                    [
+                        "Sugmv",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[7]/div[2]/div/div/div/fieldset/div/div/div/fieldset/div/div/div/div[2]/div/div/div/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "text",
+                "values": [
+                    [
+                        "sale_neighhigh",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[7]/div[2]/div/div/div/fieldset/div/div/div/fieldset/div/div/div/div[3]/div/div/div/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "text",
+                "values": [
+                    [
+                        "AsIsQuick_Sale",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[7]/div[2]/div/div/div/fieldset/div/div/div/fieldset/div/div/div/div[4]/div/div/div/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "Textbox_default",
+                "values": [
+                    [
+                        "FTB",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[7]/div[2]/div/div/div/div[2]/div/div/div/div/div[2]/div/div/div/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "Textbox_default",
+                "values": [
+                    [
+                        "No",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[7]/div[2]/div/div/div/div[2]/div/div/div/div/div[3]/div/div/div/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_default",
+                "values": [
+                    [
+                        "No",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[7]/div[2]/div/div/div/div[2]/div/div/div/div/div[4]/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "select_default1",
+                "values": [
+                    [
+                        "90",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[7]/div[2]/div/div/div/div[2]/div/div/div/div/div[6]/div/div/div[1]/input",
+                        "xpath"
+                    ]
+                ]
+            },
+            {
+                "filedtype": "Textbox",
+                "values": [
+                    [
+                        "Subject_neighborhood_Comments",
+                        "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[7]/div[2]/div/div/div/div[2]/div/div/div/div/div[8]/div/div[1]/div/textarea",
+                        "xpath"
+                    ]
+                ]
+            }
+     ]
+
+    }
+
+      

@@ -13,7 +13,7 @@ result_queue = Queue()
 def formdata_fetching_db(result_queue):
     tfsorder_id='1237432'
     tfs_orderid_rpad="SELECT * FROM subject where TFSOrderID like '"+tfsorder_id+"%'" 
-    print("\nStarted Fecting order Details form Rpad   [■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■] ")   
+    print("\nStarted Fetching order details form Rpad   [■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■] ")   
     tfs_order_id_rpad = ExecuteQuery(tfs_orderid_rpad,"Rpad") 
     # print("tfs_order_id_rpad----",tfs_order_id_rpad) 
     if tfs_order_id_rpad:
