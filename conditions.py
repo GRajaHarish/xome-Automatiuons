@@ -335,9 +335,11 @@ def condition_data(merged_data,subclient):
           if merged_data['Subtype']=='Condo':
                merged_data['SubHoa']='Yes'  
                merged_data['FloorLocation']=merged_data['Substories']
+               merged_data['Hoafees']=''
           else:
                merged_data['SubHoa']='No'
-               merged_data['FloorLocation']='' 
+               merged_data['FloorLocation']=''
+               merged_data['Hoafees']='0' 
           try:
                #merged_data['marketingtime'] = str(float(merged_data['compdom4']) + float(merged_data['compdom5']) + float(merged_data['compdom6'])/ 3)                 
                if not merged_data['compdom4']:
@@ -401,6 +403,10 @@ def condition_data(merged_data,subclient):
           merged_data['Sold1SaleType']=Type_of_Sale(merged_data['Sold1SType'])
           merged_data['Sold2SaleType']=Type_of_Sale(merged_data['Sold2SType'])
           merged_data['Sold3SaleType']=Type_of_Sale(merged_data['Sold3SType'])
+          if "REO" in merged_data['SubjectSaleType']:
+               merged_data['Percentage_of_Owners']="Yes"
+          else :
+               subject_property_condition="Owner"
 
 
 

@@ -2666,6 +2666,313 @@
             ]
         }
     ],
+    "nebihour": [
+        {
+            "filedtype": "select_default",
+            "values": [
+                [
+                    "Owner",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div[1]/input",
+                    "xpath"
+                ],
+                [
+                    "Residential",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[1]/div/div/div/div/div[2]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "select_data",
+            "values": [
+                [
+                    "SubPopdensity",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[1]/div/div/div/div/div[3]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "select_default",
+            "values": [
+                [
+                    "Average",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[1]/div/div/div/div/div[4]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "Textbox11",
+            "values": [
+                [
+                    "Comments",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[1]/div/div/div/div/div[5]/div/div[1]/div/textarea",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "select_deafult",
+            "values": [
+                [
+                    "No",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[1]/div/div/div/div/div[6]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "Textbox",
+            "values": [
+                [
+                    "Subage",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[1]/div/div/div/div/div[8]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "select_deafult",
+            "values": [
+                [
+                    "Owner",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[1]/div/div/div/div/div[9]/div/div/div[1]/input",
+                    "xpath"
+                ],
+                [
+                    "No",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[1]/div/div/div/div/div[10]/div/div/div[1]/input",
+                    "xpath"
+                ],
+                [
+                    "0-5%",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[1]/div/div/div/div/div[11]/div/div/div[1]/input",
+                    "xpath"
+                ],
+                [
+                    "Stable",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[1]/div/div/div/div/div[12]/div/div/div[1]/input",
+                    "xpath"
+                ],
+                [
+                    "No",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[1]/div/div/div/div/div[13]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "text",
+            "values": [
+                [
+                    "# of Fair Market Listings",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[1]/div/div/div/div/div[14]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "text",
+            "values": [
+                [
+                    "#REO/Foreclosure Listings",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[1]/div/div/div/div/div[15]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "text",
+            "values": [
+                [
+                    "Comparable 12 Month Sales",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[1]/div/div/div/div/div[16]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "text",
+            "values": [
+                [
+                    "HOA?",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[1]/div/div/div/div/div[17]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "text",
+            "values": [
+                [
+                    "Median Site Size",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[1]/div/div/div/div/fieldset/div/div/div/div[1]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "text",
+            "values": [
+                [
+                    "Subject.MedianSiteSizeUnits",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[2]/div/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "text",
+            "values": [
+                [
+                    "Median GLA",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[2]/div/div/div/div/div[1]/div/div/div/div/div[2]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "text",
+            "values": [
+                [
+                    "Median Year Built",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[2]/div/div/div/div/div[2]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "text",
+            "values": [
+                [
+                    "Median Market Rent",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[2]/div/div/div/div/div[3]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "text",
+            "values": [
+                [
+                    "Neighborhood Trend",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[2]/div/div/div/div/div[4]/div/div/div/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "text",
+            "values": [
+                [
+                    "Market Trend",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[2]/div/div/div/div/div[5]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "text",
+            "values": [
+                [
+                    "@ Rate",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[2]/div/div/div/div/fieldset[1]/div/div/div/div[1]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "text",
+            "values": [
+                [
+                    "Price Range From",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[2]/div/div/div/div/fieldset[1]/div/div/div/div[2]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "text",
+            "values": [
+                [
+                    "Price Range To",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[2]/div/div/div/div/fieldset[1]/div/div/div/div[3]/div/div[1]/div/textarea",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "text",
+            "values": [
+                [
+                    "Avg. DOM",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[2]/div/div/div/div/fieldset[2]/div/div/div/div[1]/div/div/div/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "text",
+            "values": [
+                [
+                    "Is subject area REO driven?",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[2]/div/div/div/div/fieldset[2]/div/div/div/div[2]/div/div/div/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "text",
+            "values": [
+                [
+                    "REO Trend",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[2]/div/div/div/div/div[6]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "text",
+            "values": [
+                [
+                    "Price Range From",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[2]/div/div/div/div/div[7]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "text",
+            "values": [
+                [
+                    "Median Price",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[2]/div/div/div/div/div[8]/div/div/div[1]/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "text",
+            "values": [
+                [
+                    "Price Range To",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[2]/div/div/div/div/fieldset[3]/div/div/div/div[1]/div/div/div/input",
+                    "xpath"
+                ]
+            ]
+        },
+        {
+            "filedtype": "text",
+            "values": [
+                [
+                    "Environmental Problems",
+                    "/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div[5]/div[2]/div/div/div/div[2]/div/div/div/div/fieldset[3]/div/div/div/div[2]/div/div/div/input",
+                    "xpath"
+                ]
+            ]
+        }
+    ],
     "price": [
         {
            "filedtype": "text",
