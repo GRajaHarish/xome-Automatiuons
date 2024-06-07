@@ -16,12 +16,11 @@ def ClientLogin(order_details):
     subclientName=order_details['subclient']
     broker_name=order_details['broker_name'] 
     address=order_details['subject_address']
-    print("clientname ",subclientName)
+    
     if broker_name == "ECESIS":
      broker_name=subclientName
     else:
      broker_name=broker_name  
-    print("mainclient" ,broker_name ,"subclient",subclientName)
     try:
        result_queue = queue.Queue()
        t1 = threading.Thread(target= formdata_fetching_db, args=(result_queue,order_details))
@@ -40,30 +39,35 @@ def ClientLogin(order_details):
          flag=0
     if flag == 1:     
           if ClientDetails[2] == "Active" and flag == 1:
-               driver=loginginto_Portal(ClientDetails)
+               print("\n Started login for client ",subclientName)
+               logingStatus,driver=loginginto_Portal(ClientDetails)
                t1.join()
-               
-               results = []
-               while not result_queue.empty():
-                         results.append(result_queue.get())
-                         # print(results)
-                         logging.info("Results:{}".format(results))
-               merged_json=results[0]
-                    #print(merged_json)
-               logging.info("merged_json in ss_form_processing:{}".format(merged_json))
-                    
-               try:
-                         #print("merged_json['QC']   ",merged_json['QC'])
-                         QC=merged_json['QC']
-                         logging.info("QC Count:{}".format(QC))
-               except Exception as ex:
-                         QC="0"
-                         print('Exception rised ..', ex)
-                         logging.info("Exception rised in QC..:{}".format(ex))
-                    #print("QC ",QC)
-               if QC=="0" or QC=="null" or QC=="" or QC is None:
-                         # findorderTYPE(driver,address,merged_json,order_details)\
-                         findorderTYPE(driver,address,order_details,merged_json)
+               if "Login error" in logingStatus:
+                    # statuschange(order_details['order_id'],"21","3","14") 
+                    logging.info("loginerror")
+                    print("loginerror")
+               else:         
+                    results = []
+                    while not result_queue.empty():
+                              results.append(result_queue.get())
+                              # print(results)
+                              logging.info("Results:{}".format(results))
+                    merged_json=results[0]
+                         #print(merged_json)
+                    logging.info("merged_json in ss_form_processing:{}".format(merged_json))
+                         
+                    try:
+                              #print("merged_json['QC']   ",merged_json['QC'])
+                              QC=merged_json['QC']
+                              logging.info("QC Count:{}".format(QC))
+                    except Exception as ex:
+                              QC="0"
+                              print('Exception rised ..', ex)
+                              logging.info("Exception rised in QC..:{}".format(ex))
+                         #print("QC ",QC)
+                    if QC=="0" or QC=="null" or QC=="" or QC is None:
+                              # findorderTYPE(driver,address,merged_json,order_details)\
+                                findorderTYPE(driver,address,order_details,merged_json)
           else:
                print('Bad Password')
                logging.info('Bad Password')
@@ -88,7 +92,7 @@ def loginginto_Portal(ClientDetails):
             )
             print("Login SuccessFull ....................................................................................")
             print("waiting For OTP /////////////////////////////////////////////////////////////////////////////////////")
-            time.sleep(90)
+            time.sleep(80)
             OtpQuery ="SELECT Code FROM xomeverificationcode where clientid ='"+clientid+"' ORDER BY timestamp DESC LIMIT 1"
             otp=ExecuteQuery(OtpQuery,"otp")
             otpvalue=otp[0]
@@ -101,8 +105,9 @@ def loginginto_Portal(ClientDetails):
             EC.presence_of_element_located((By.ID, "inProgressOrdersTab"))
             )
             cookies = driver.get_cookies()
+            logingStatus="login succesfully"
             print("login succesfully")
-            return driver
+            return logingStatus,driver
        except Exception as e:
             print(f"An error occurred: {e}")
        finally:

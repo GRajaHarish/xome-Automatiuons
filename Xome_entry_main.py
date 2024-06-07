@@ -25,7 +25,7 @@ from stdlib.ip_checking import ip_address_checking
 import logging
 
 def x_completed():
-    print("\n \n Smart Entry Xome started   ......................................................................")
+    print("\n  Smart Entry Xome started   ......................................................................")
     url = 'http://13.200.17.36/autobpo_test/Home/GetBPO_Completed?stateId=0'
     response = requests.get(url)
     if response.status_code == 200:
@@ -38,6 +38,7 @@ def x_completed():
             for x in dataset:  
                 ip_check=='198.98.15.235'  
                 if x['soft_portal_name']=="Xome": #and x['subclient']=="Ashley": # and ip_check=='198.98.15.235' and x['subclient']=="Daniel Pacut" and x['broker_name']=="Bang":
+
                     if x['subclient'] in xome_orderlist:
                             pass
                     else:
@@ -46,9 +47,7 @@ def x_completed():
             print("Total Number of xome orders =",len(xome_orderlist))
             threads=[]
             if len(xome_orderlist)>0:
-                print("length ",len(xome_orderlist))
                 logging.info("length xome Order list :{}".format(len(xome_orderlist)))
-                print("threading starting")
                 if len(xome_orderlist)>=15:
                     for x in range(15):   
                         t = threading.Thread(target=ClientLogin, args=(xome_orderlist[x],))
