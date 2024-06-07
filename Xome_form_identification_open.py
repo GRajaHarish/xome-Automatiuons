@@ -46,6 +46,7 @@ def openOrderType(data,address,merged_json,order_details):
         if info:
             for order_type in orderlist:
                 if order_type in info[2]:
+                        fileName=info[2]
                         clickFormType=BtnClick(info[1],chromedriver)
                         if clickFormType == "done":
                             print("form type identified", clickFormType)
@@ -57,7 +58,7 @@ def openOrderType(data,address,merged_json,order_details):
                             viewFormbtnClick=BtnClick(viewFormBtnXpath,chromedriver)
                             if viewFormbtnClick == "done":
                                 print("started form filling////////////////////////////////////////")
-                                with open('connectors/cbpo x.json') as f:
+                                with open(f'connectors/{fileName}.json') as f:
                                   data = json.load(f)
                                 orderid=order_details['order_id']
                                 from Xome_EXT_form_filling import Formnewbpoext
