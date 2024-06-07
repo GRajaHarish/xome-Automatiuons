@@ -4,14 +4,17 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from conditions import condition_data
 import time
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 import logging
 
 def findorderTYPE(driver,address,order_details,merged_json):
     subclient = order_details['subclient']
+    print('Finding Order type for Client --------------------------------------------------',subclient)
     merged_json=condition_data(merged_json,subclient)
     global chromedriver
     chromedriver=driver
-    OrderProgressTab=chromedriver.find_element(By.ID,"inProgressOrdersTab")
+    OrderProgressTab=chromedriver.find_element(By.XPATH,"/html/body/div/div[3]/div[2]/div/div[2]/div[3]/ul/li[2]/a")
     OrderProgressTab.click()
     table = chromedriver.find_element(By.ID, "OrdersInProgressGrid")
     rows = table.find_elements(By.XPATH, ".//tbody/tr")
@@ -32,9 +35,9 @@ def findorderTYPE(driver,address,order_details,merged_json):
         subject_property_texts.append(subject_property_text)
         data[subject_property_text] = (ordertypeLink, orderlinkXpath,form_type)
     logging.info(json.dumps(data,indent=4))
-    openOrderType(data,address,driver,merged_json,order_details)
+    openOrderType(data,address,merged_json,order_details)
 
-def openOrderType(data,address,driver,merged_json,order_details):
+def openOrderType(data,address,merged_json,order_details):
     print(data,address)
     address=address.split()[0]
     orderlist=["cBPO Ext (u)", "cBPO Ext (n)", "cBPO Ext (a)","cBPO Ext (x) 72hr", "cEval Ext (b)", "cBPO Ext (x) AVR","Exterior PCR Only"]
@@ -43,38 +46,53 @@ def openOrderType(data,address,driver,merged_json,order_details):
         if info:
             for order_type in orderlist:
                 if order_type in info[2]:
-                    order = chromedriver.find_elements(By.XPATH,info[1] )
-                    if order:
-                        listing_address=openIdentifiedForm(order[0])
-                        if listing_address:
-                            print("Data has a value:", listing_address)
+                        clickFormType=BtnClick(info[1],chromedriver)
+                        if clickFormType == "done":
+                            print("form type identified", clickFormType)
                             logging.info("Entry already filled")
                             # statuschange(order_details['order_id'], "25", "3", "14")
+                            ChangeTonewTab(chromedriver)
+                            viewFormBtnXpath="/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[2]/div/div/a[6]"
+                            time.sleep(10)
+                            viewFormbtnClick=BtnClick(viewFormBtnXpath,chromedriver)
+                            if viewFormbtnClick == "done":
+                                print("started form filling////////////////////////////////////////")
+                                with open('connectors/cbpo x.json') as f:
+                                  data = json.load(f)
+                                orderid=order_details['order_id']
+                                from Xome_EXT_form_filling import Formnewbpoext
+                                init = Formnewbpoext()
+                                init.form(merged_json,chromedriver,orderid, data) 
+                            else:
+                                time.sleep(20)
+                                viewFormXpath="/html/body/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div/div/div/div/div/a"
+                                viewFormClick=BtnClick(viewFormXpath,chromedriver)
+                                if viewFormClick=="done":
+                                    print("view btn  found")
+                                else:
+                                    print("view form button not fount")
                         else:
                             print("Fresh Form Identified ................................................................................")
-                            with open('connectors/cbpo x.json') as f:
-                                data = json.load(f)
-                            from Xome_EXT_form_filling import Formnewbpoext
-                            init = Formnewbpoext()
-                            # if session then send session
-                            init.form(merged_json, driver, order_details['order_id'], data)
-                    else:
-                        print(info[1])
-                        print("Order type not found unable to do this order ")
-                    break  
+                               
         else:
             print("address not found in portal")
     else:
             print("address not match in portal")
    
 
-def openIdentifiedForm(xpath):
-     print("Order type found")
-     xpath.click()
-     viewFormBTN = WebDriverWait(driver, 10).until(
-     EC.presence_of_element_located((By.XPATH, "//*[@id='button-1048-btnEl']"))
-     )
-     viewFormBTN.click()
-     print("Openingform")
-     
+def BtnClick(xpath,driver):
+    btn=driver.find_elements(By.XPATH,xpath)
+    if btn:
+       btn[0].click()
+       return "done"
+    else:
+       return "element not fount"
+
+def ChangeTonewTab(driver):
+    WebDriverWait(driver, 10).until(EC.number_of_windows_to_be(2))
+    window_handles = driver.window_handles
+    driver.switch_to.window(window_handles[-1])  # Switch to the latest opened tab
+    return driver
+    
+
      
